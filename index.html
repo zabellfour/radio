@@ -8,7 +8,54 @@
     <link media="all" rel="stylesheet" href="assets/css/style.min.css">
   </head>
   <body>
-    <header id="header">lorm50<span class="icon-radio"></span></header>
+    <header id="header">
+      <div class="header-top">
+        <div class="container"><a class="logo-full" href="#"><img src="assets/images/logo-full.png" alt="Radio Rythme Blev"></a>
+          <ul class="nav-list">
+            <li><a href="#"><i class="icon-radio"></i><strong class="link-text">écouter</strong></a></li>
+            <li><a href="#"><i class="icon-tv"></i><strong class="link-text">regarder</strong></a></li>
+            <li><a href="#"><i class="icon-podcast"></i><strong class="link-text">podcasts</strong></a></li>
+            <li><a href="#"><i class="icon-frequence"></i><strong class="link-text">fréquences</strong></a></li>
+          </ul>
+          <form class="seaech-form" action="#">
+            <input type="text" placegolder="Rechercher">
+            <button type="submit"><i class="icon-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="header-center">
+        <div class="header-center-top">
+          <div class="container"><a class="logo" href="#"><img src="assets/images/logo-color.png" alt="RRB"></a>
+            <div class="hero-holder">
+              <div class="name-holder"><span class="descr">à l’antenne</span><strong class="name">jeudi hippique</strong></div><img src="assets/images/header-hero.png" alt="jeudi hippique">
+            </div>
+            <div class="apps-box">
+              <div class="player-holder">
+                <div class="play-info"><span class="top-title">Player</span><span class="main-title">écoutez le direct</span><span class="progress"></span><span class="bottom-info"><span class="track-info">Space oddity</span><span class="author">DAVID BOWIE</span></span></div>
+                <button class="play-button"> <i class="icon-play"></i></button>
+              </div>
+              <div class="weather-holder">
+                <time datetime="2017-09-28">VEN 28 SEPT</time>
+                <div class="temp-row"> <strong>28°C</strong><span class="temp-image"><img src="assets/images/weather.svg" alt="weather image" width="47" height="40"></span></div><a href="#" target="_blank">meteo.nc  </a>
+              </div>
+              <div class="clock-holder">clock :)</div>
+            </div>
+          </div>
+        </div>
+        <div class="header-center-bottom">
+          <div class="container">
+            <div class="owl-carousel owl-theme freq-slider">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <div id="wrapper">
       <div class="entry-section">
         <div id="home-canvas"></div>

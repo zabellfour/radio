@@ -1,2 +1,71 @@
-header#header lorm50
-    span.icon-radio
+header#header
+    .header-top
+        .container
+            a.logo-full(href="#")
+                img(src="assets/images/logo-full.png", alt="Radio Rythme Blev")
+            ul.nav-list
+                li
+                    a(href="#")
+                        i.icon-radio
+                        strong.link-text écouter
+                li
+                    a(href="#")
+                        i.icon-tv
+                        strong.link-text regarder
+                li
+                    a(href="#")
+                        i.icon-podcast
+                        strong.link-text podcasts
+                li
+                    a(href="#")
+                        i.icon-frequence
+                        strong.link-text fréquences
+            form.seaech-form(action="#")
+                input(type="text" placegolder="Rechercher")
+                button(type="submit")
+                    i.icon-search
+    .header-center
+        .header-center-top
+            .container
+                a.logo(href="#")
+                    img(src="assets/images/logo-color.png", alt="RRB")
+                .hero-holder
+                    .name-holder
+                        span.descr à l’antenne
+                        strong.name jeudi hippique
+                    img(src="assets/images/header-hero.png", alt="jeudi hippique")
+                .apps-box
+                    .player-holder
+                        .play-info
+                            span.top-title Player
+                            span.main-title écoutez le direct
+                            span.progress
+                            span.bottom-info
+                                span.track-info Space oddity
+                                span.author DAVID BOWIE
+                        button.play-button 
+                            i.icon-play
+                    .weather-holder
+                        time(datetime="2017-09-28") VEN 28 SEPT
+                        div.temp-row 
+                            strong 28°C
+                            span.temp-image
+                                img(src="assets/images/weather.svg", alt="weather image" width="47" height="40")
+                        a(href="#" target="_blank") meteo.nc  
+                    .clock-holder clock :)
+        .header-center-bottom
+            .container
+                div.owl-carousel.owl-theme.freq-slider
+                    div 1
+                    div 2
+                    div 3
+                    div 4
+                    div 5
+                    div 6
+
+
+
+
+
+
+                                                                               

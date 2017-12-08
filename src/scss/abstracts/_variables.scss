@@ -1,6 +1,6 @@
 $gray: #ececec;
 $gray-dark: #777272;
-$black: #333;
+$black: #000;
 $white: #fff;
 $yellow: #fee934;
 $blue: #084e8f;
@@ -19,8 +19,8 @@ $base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
 // Body
 $base-text-color: $black !default;
 $base-background-color: $white !default;
-$base-font-size: 16px !default;
-$base-line-height: 1.2 !default;
+$base-font-size: 14px !default;
+$base-line-height: 1.4 !default;
 $base-font-family: $base-font-sans-serif !default;
 
 $vertical-rhythm: ($base-line-height * 1em);
@@ -28,7 +28,7 @@ $vertical-rhythm: ($base-line-height * 1em);
 $base-min-width: 320px;
 
 // Links
-$base-link-color: $light-blue;
+$base-link-color: $blue;
 
 // Buttons
 $btn-color: $white !default;
@@ -43,12 +43,12 @@ $form-element-focus-border-color: $black !default;
 $placeholder-color: $gray !default;
 
 // Headers
-$h1-font-size: 30px !default;
-$h2-font-size: 27px !default;
-$h3-font-size: 24px !default;
-$h4-font-size: 21px !default;
-$h5-font-size: 17px !default;
-$h6-font-size: 15px !default;
+$h1-font-size: 50px !default;
+$h2-font-size: 40px !default;
+$h3-font-size: 36px !default;
+$h4-font-size: 29px !default;
+$h5-font-size: 26px !default;
+$h6-font-size: 22 px !default;
 
 $headings-font-family: inherit !default;
 $headings-color: inherit !default;
