@@ -4,6 +4,7 @@
 // Feel free with using ES6 here.
 
 import common from './modules/common';
+import sliderPlaylist from './modules/sliderPlaylist';
 
 ( ($) => {
   'use strict';
@@ -11,6 +12,7 @@ import common from './modules/common';
   // When DOM is ready
   $(() => {
     common.headerSlider();
+    sliderPlaylist.init();
   });
 
 })(jQuery);

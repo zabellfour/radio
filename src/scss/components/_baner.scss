@@ -24,16 +24,22 @@
 		}
 		.info {text-transform:uppercase;}
 		.btn {
+			@include animate(color background);
 			font: 16px/1 'TradeGothic';
 			border-radius:50px;
-			background:#dd1424;
+			background:$red;
 			text-transform:uppercase;
-			color:#fff;
-			padding:5px 10px;
-			border:none;
+			color:$white;
+			padding:4px 9px;
+			border:2px solid $red;
 			box-shadow:none;
 			min-width: 112px;
 			letter-spacing: 1px;
+			&:focus {outline:none;}
+			&:hover {
+				color: $red;
+				background: $white;
+			}
 		}
 		.btn-holder {text-align:right;}
 	}
@@ -50,6 +56,6 @@
 		font: bold  36px/38px 'TradeGothic';
 		text-transform:uppercase;
 		margin:0 0 10px;
-		color:#084e8f;
+		color:$blue;
 	}
 }

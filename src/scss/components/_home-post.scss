@@ -9,9 +9,45 @@
 		margin:0 0 2px;
 		color: $blue;
 	}
+	.img-box {
+		position:relative;
+	}
+	.block-info {
+		position:absolute;
+		right:18px;
+		bottom:10px;
+	}
+	img {
+		width:100%;
+		vertical-align:top;
+	}
 	p {margin:0 0 17px;}
 }
 
+.info-like,
+.info-comment {
+	color: $white;
+	position:relative;
+	padding:0 0 0 20px;
+	font-size: 12px;
+	font-weight: bold;
+	margin:0 0 0 20px;
+	&:before {
+		@extend [class^="icon-"];
+		@extend .icon-favorite_border;
+		position:absolute;
+		font-size:16px;
+		left:0;
+		top: 48%;
+		transform:translateY(-50%);
+	}
+}
+.info-comment {
+	&:before {
+		content: "\e902";
+		font-size:12px;
+	}
+}
 .three-column {
 	color: #545454;
 	margin:0 0 20px;
@@ -61,7 +97,7 @@
 	}
 	img {
 		width:100%;
-		vertical-align:bottom;
+		vertical-align:bottoёm;
 		margin:0 0 13px;
 	}
 	p {margin:0;}
@@ -91,6 +127,7 @@
 	}
 	.img {
 		margin:0 0 18px;
+		position:relative;
 	}
 	.h4 {
 		font: bold  29px/34px 'TradeGothic';
@@ -122,7 +159,7 @@
 	}
 	.btn-wifi,
 	.btn-play {
-		@include animate(opacity);
+		@include animate(color background);
 		float:right;
 		border-radius:100px;
 		background: $red;
@@ -132,6 +169,7 @@
 		height:40px;
 		font-size:18px;
 		margin:3px 6px 0 0;
+		border: 2px solid $red;
 		&:before {
 			@extend [class^="icon-"];
 			@extend .icon-play;
@@ -140,11 +178,19 @@
 			top:50%;
 			transform:translate(-50%,-50%);
 		}
-		&:hover {opacity:.8;}
+		&:hover {
+			background:$white;
+			color: $red;
+		}
 	}
 	.btn-wifi:before {
 		@extend .icon-rss;
 		left:50%;
+	}
+	.info-like {
+		position:absolute;
+		right: 18px;
+		bottom: 6px;
 	}
 	img {
 		width:100%;

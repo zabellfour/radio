@@ -5,4 +5,64 @@ $sidebar-bg: $gray-light;
 	width:32%;
 	background:$sidebar-bg;
 	padding:14px 46px 10px 33px;
+	.img-ad {
+		margin:0 0 17px;
+		img {
+			width:100%;
+			vertical-align:top;
+		}
+	}
+}
+
+.facebook-link {
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background:#3b5999;
+	color: $white;
+	margin: 0 -46px 20px -33px;
+	border-radius:3px;
+	font-weight:500;
+	font-size:47px;
+	line-height:52px;
+	text-decoration:none;
+	padding:18px 18px 33px 30px;
+	.img {
+		min-width:70px;
+		max-width:70px;
+	}
+	img {width:100%;}
+}
+
+.sidebar-list {
+	margin:0 0 24px;
+	.h4 {
+		text-transform:uppercase;
+		color:$blue;
+		margin:0 0 6px;
+		font-size:25px;
+		line-height:27px;
+	}
+	.block {
+		font-weight:bold;
+		padding:30px 30px 5px;
+		background:$blue;
+		font-size:35px;
+		line-height:37px;
+		text-transform:uppercase;
+		color:$white;
+	}
+	.row {
+		margin:0 0 24px;
+		display:flex;
+		justify-content: space-between;
+	}
+	.img {
+		min-width:80px;
+		width:80px;
+		margin:-8px 0 0;
+	}
+	img {
+		width:100%;
+	}
 }
