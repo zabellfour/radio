@@ -1,6 +1,6 @@
 header#header
-    .header-top
-        .container
+    .container
+        .header-top
             a.logo-full(href="#")
                 img(src="assets/images/logo-full.png", alt="Radio Rythme Blev")
             ul.nav-list
@@ -20,48 +20,97 @@ header#header
                     a(href="#")
                         i.icon-frequence
                         strong.link-text fréquences
-            form.seaech-form(action="#")
-                input(type="text" placegolder="Rechercher")
+            form.search-form(action="#")
+                input(type="text" placeholder="Rechercher")
                 button(type="submit")
                     i.icon-search
     .header-center
         .header-center-top
             .container
-                a.logo(href="#")
-                    img(src="assets/images/logo-color.png", alt="RRB")
-                .hero-holder
-                    .name-holder
-                        span.descr à l’antenne
-                        strong.name jeudi hippique
-                    img(src="assets/images/header-hero.png", alt="jeudi hippique")
-                .apps-box
-                    .player-holder
-                        .play-info
-                            span.top-title Player
-                            span.main-title écoutez le direct
-                            span.progress
-                            span.bottom-info
-                                span.track-info Space oddity
-                                span.author DAVID BOWIE
-                        button.play-button 
-                            i.icon-play
-                    .weather-holder
-                        time(datetime="2017-09-28") VEN 28 SEPT
-                        div.temp-row 
-                            strong 28°C
-                            span.temp-image
-                                img(src="assets/images/weather.svg", alt="weather image" width="47" height="40")
-                        a(href="#" target="_blank") meteo.nc  
-                    .clock-holder clock :)
+                .header-center-top-wrapper
+                    a.logo(href="#")
+                        img(src="assets/images/logo-color.png", alt="RRB")
+                    .hero-holder
+                        .name-holder
+                            span.descr à l’antenne
+                            strong.name jeudi hippique
+                        img(src="assets/images/header-hero.png", alt="jeudi hippique")
+                    .apps-box
+                        .player
+                            .play-info
+                                span.top-title Player
+                                span.main-title écoutez le direct
+                                .progress
+                                    span.remaining(style='width:70%;')
+                                .bottom-info
+                                    span.track-info Space oddity
+                                    span.author DAVID BOWIE
+                            button.play-button 
+                                i.icon-play
+                        .weather-holder
+                            img(src="assets/images/weather-widget.png", alt="weather widget")
+                        .clock-holder
+                            img(src="assets/images/clock.png", alt="clock")
         .header-center-bottom
             .container
-                div.owl-carousel.owl-theme.freq-slider
-                    div 1
-                    div 2
-                    div 3
-                    div 4
-                    div 5
-                    div 6
+                .owl-carousel.owl-theme.program-slider
+                    .slide.now-playing
+                        time.time(datetime="2017-05-15 7:30") 7h30
+                        .text
+                            strong.title L 'INVITé DU MATIN
+                            span.text-descr par Camille Blondel
+                    .slide 
+                        time.time(datetime="2017-05-15 7:30") 7h30
+                        .text
+                            strong.title L 'INVITé DU MATIN
+                            span.text-descr par Camille Blondel
+                    .slide 
+                        time.time(datetime="2017-05-15 7:30") 7h30
+                        .text
+                            strong.title L 'INVITé DU MATIN
+                            span.text-descr par Camille Blondel
+                    .slide 
+                        time.time(datetime="2017-05-15 7:30") 7h30
+                        .text
+                            strong.title L 'INVITé DU MATIN
+                            span.text-descr par Camille Blondel
+                    .slide 
+                        time.time(datetime="2017-05-15 7:30") 7h30
+                        .text
+                            strong.title L 'INVITé DU MATIN
+                            span.text-descr par Camille Blondel
+                    .slide 
+                        time.time(datetime="2017-05-15 7:30") 7h30
+                        .text
+                            strong.title L 'INVITé DU MATIN
+                            span.text-descr par Camille Blondel                                                                                    
+    .container
+        .header-bottom
+            nav.header-bottom-nav
+                a(href="#") Actualités
+                a(href="#") Programmes
+                a(href="#") Vidéos
+                a(href="#") RRB
+                a(href="#").marked
+                    .col1 Jeux
+                    .col2
+                        strong 25 00 00*
+                        span standard jeux
+            form.login-form
+                .title 
+                    strong Club RRB
+                    a(href="#" target="_blank") Je m‘inscris
+                .input-row
+                    input(type="text" placegolder="Identifiant")
+                .group-input-row
+                    input(type="password" placegolder="Mot de passe")
+                    button(type="submit") OK
+
+
+        
+
+
+                    
 
 
 

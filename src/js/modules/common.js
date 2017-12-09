@@ -3,13 +3,17 @@
 // You can remove or add your own function in this file.
 
 var common = {
-  headerSlider: function() {
-    var $slEl = $('.freq-slider');
-    if (!$slEl.length) {
-      return false;
+    headerSlider: function() {
+        var $slEl = $('.program-slider');
+        if (!$slEl.length) {
+            return false;
+        }
+        $slEl.owlCarousel({
+            items: 4,
+            dots: false,
+            nav: true
+        });
     }
-    $slEl.owlCarousel();
-  }
 };
 
 export default common;

@@ -9,50 +9,87 @@
   </head>
   <body>
     <header id="header">
-      <div class="header-top">
-        <div class="container"><a class="logo-full" href="#"><img src="assets/images/logo-full.png" alt="Radio Rythme Blev"></a>
+      <div class="container">
+        <div class="header-top"><a class="logo-full" href="#"><img src="assets/images/logo-full.png" alt="Radio Rythme Blev"></a>
           <ul class="nav-list">
             <li><a href="#"><i class="icon-radio"></i><strong class="link-text">écouter</strong></a></li>
             <li><a href="#"><i class="icon-tv"></i><strong class="link-text">regarder</strong></a></li>
             <li><a href="#"><i class="icon-podcast"></i><strong class="link-text">podcasts</strong></a></li>
             <li><a href="#"><i class="icon-frequence"></i><strong class="link-text">fréquences</strong></a></li>
           </ul>
-          <form class="seaech-form" action="#">
-            <input type="text" placegolder="Rechercher">
+          <form class="search-form" action="#">
+            <input type="text" placeholder="Rechercher">
             <button type="submit"><i class="icon-search"></i></button>
           </form>
         </div>
       </div>
       <div class="header-center">
         <div class="header-center-top">
-          <div class="container"><a class="logo" href="#"><img src="assets/images/logo-color.png" alt="RRB"></a>
-            <div class="hero-holder">
-              <div class="name-holder"><span class="descr">à l’antenne</span><strong class="name">jeudi hippique</strong></div><img src="assets/images/header-hero.png" alt="jeudi hippique">
-            </div>
-            <div class="apps-box">
-              <div class="player-holder">
-                <div class="play-info"><span class="top-title">Player</span><span class="main-title">écoutez le direct</span><span class="progress"></span><span class="bottom-info"><span class="track-info">Space oddity</span><span class="author">DAVID BOWIE</span></span></div>
-                <button class="play-button"> <i class="icon-play"></i></button>
+          <div class="container">
+            <div class="header-center-top-wrapper"><a class="logo" href="#"><img src="assets/images/logo-color.png" alt="RRB"></a>
+              <div class="hero-holder">
+                <div class="name-holder"><span class="descr">à l’antenne</span><strong class="name">jeudi hippique</strong></div><img src="assets/images/header-hero.png" alt="jeudi hippique">
               </div>
-              <div class="weather-holder">
-                <time datetime="2017-09-28">VEN 28 SEPT</time>
-                <div class="temp-row"> <strong>28°C</strong><span class="temp-image"><img src="assets/images/weather.svg" alt="weather image" width="47" height="40"></span></div><a href="#" target="_blank">meteo.nc  </a>
+              <div class="apps-box">
+                <div class="player">
+                  <div class="play-info"><span class="top-title">Player</span><span class="main-title">écoutez le direct</span>
+                    <div class="progress"><span class="remaining" style="width:70%;"></span></div>
+                    <div class="bottom-info"><span class="track-info">Space oddity</span><span class="author">DAVID BOWIE</span></div>
+                  </div>
+                  <button class="play-button"> <i class="icon-play"></i></button>
+                </div>
+                <div class="weather-holder"><img src="assets/images/weather-widget.png" alt="weather widget"></div>
+                <div class="clock-holder"><img src="assets/images/clock.png" alt="clock"></div>
               </div>
-              <div class="clock-holder">clock :)</div>
             </div>
           </div>
         </div>
         <div class="header-center-bottom">
           <div class="container">
-            <div class="owl-carousel owl-theme freq-slider">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-              <div>4</div>
-              <div>5</div>
-              <div>6</div>
+            <div class="owl-carousel owl-theme program-slider">
+              <div class="slide now-playing">
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel                                                                                    </span></div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-bottom">
+          <nav class="header-bottom-nav"><a href="#">Actualités</a><a href="#">Programmes</a><a href="#">Vidéos</a><a href="#">RRB</a><a class="marked" href="#">
+              <div class="col1">Jeux</div>
+              <div class="col2"><strong>25 00 00*</strong><span>standard jeux</span></div></a></nav>
+          <form class="login-form">
+            <div class="title"> <strong>Club RRB</strong><a href="#" target="_blank">Je m‘inscris</a></div>
+            <div class="input-row">
+              <input type="text" placegolder="Identifiant">
+            </div>
+            <div class="group-input-row">
+              <input type="password" placegolder="Mot de passe">
+              <button type="submit">OK</button>
+            </div>
+          </form>
         </div>
       </div>
     </header>
