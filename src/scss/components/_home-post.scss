@@ -1,0 +1,104 @@
+/* home post style */
+
+.top-post-home {
+	font: 14px/20px 'Arial';
+	color:rgba(0,0,0,.87);
+	margin:0 0 10px;
+	.h4 {
+		font: bold  40px/42px 'TradeGothic';
+		margin:0 0 2px;
+		color: $blue;
+	}
+	p {margin:0 0 17px;}
+}
+
+.three-column {
+	color:rgba(0,0,0,.87);
+	margin:0 0 20px;
+	font-size:22px;
+	line-height:25px;
+	font-weight:bold;
+	display:flex;
+	justify-content: space-between;
+	.box {
+		width:32.5%;
+		background: $gray-light;
+		padding:10px;
+	}
+	.title {
+		background: #003dd0;
+		display:flex;
+		justify-content: space-between;
+		font-size:23px;
+		color:#fee934;
+		text-transform:uppercase;
+		margin:-10px -10px 0;
+		padding: 2px 5px 0px 10px;
+		align-items: center;
+	}
+	.data {
+		font-family:'Arial';
+		font-weight:normal;
+		font-size:12px;
+		line-height:14px;
+	}
+	.logo-box {
+		img {
+			margin:0;
+		}
+	}
+	.row {
+		padding:0 0 10px 6px;
+		margin:0 0 2px;
+		border-bottom:1px solid #d8d8d8;
+		&:last-child {
+			padding:0 0 0 6px;
+			border:none;
+		}
+	}
+	.block {
+		padding:4px 0 0 0;
+	}
+	img {
+		width:100%;
+		vertical-align:bottom;
+		margin:0 0 13px;
+	}
+	p {margin:0;}
+}
+
+.video-post {
+	font: 16px/25px 'Arial';
+	display:flex;
+	justify-content: space-between;
+	.box {
+		width:48.5%;
+	}
+	.row {
+		display:flex;
+		justify-content: space-between;
+	}
+	.img-row {
+		width:30%;
+	}
+	.text-row {
+		width:70%;
+	}
+	.img {
+		margin:0 0 18px;
+	}
+	.h4 {
+		font: bold  29px/34px 'TradeGothic';
+		margin:0;
+	}
+	.text {
+		padding:0 0 0 10px;
+	}
+	.title {
+		margin:0 0 12px;
+	}
+	img {
+		width:100%;
+		vertical-align:top;
+	}
+}
