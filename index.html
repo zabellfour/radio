@@ -8,7 +8,74 @@
     <link media="all" rel="stylesheet" href="assets/css/style.min.css">
   </head>
   <body>
-    <!--include ../partials/header-->
+    <header id="header">
+      <div class="container">
+        <div class="header-top"><a class="logo-full" href="#"><img src="assets/images/logo-full.png" alt="Radio Rythme Blev"></a>
+          <ul class="nav-list">
+            <li><a href="#"><i class="icon-radio"></i><strong class="link-text">écouter</strong></a></li>
+            <li><a href="#"><i class="icon-tv"></i><strong class="link-text">regarder</strong></a></li>
+            <li><a href="#"><i class="icon-podcast"></i><strong class="link-text">podcasts</strong></a></li>
+            <li><a href="#"><i class="icon-frequence"></i><strong class="link-text">fréquences</strong></a></li>
+          </ul>
+          <form class="search-form" action="#">
+            <input type="text" placeholder="Rechercher">
+            <button type="submit"><i class="icon-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="header-center">
+        <div class="header-center-top">
+          <div class="container">
+            <div class="header-center-top-wrapper"><a class="logo" href="#"><img src="assets/images/logo-color.png" alt="RRB"></a>
+              <div class="hero-holder">
+                <div class="name-holder"><span class="descr">à l’antenne</span><strong class="name">jeudi hippique</strong></div><img src="assets/images/header-hero.png" alt="jeudi hippique">
+              </div>
+              <div class="apps-box">
+                <div class="player">
+                  <div class="play-info"><span class="top-title">Player</span><span class="main-title">écoutez le direct</span>
+                    <div class="progress"><span class="remaining" style="width:70%;"></span></div>
+                    <div class="bottom-info"><span class="track-info">Space oddity</span><span class="author">DAVID BOWIE</span></div>
+                  </div>
+                  <button class="play-button"> <i class="icon-play"></i></button>
+                </div>
+                <div class="weather-holder"><img src="assets/images/weather-widget.png" alt="weather widget"></div>
+                <div class="clock-holder"><img src="assets/images/clock.png" alt="clock"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-center-bottom">
+          <div class="container">
+            <div class="owl-carousel owl-theme program-slider">
+              <div class="slide now-playing">
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+              </div>
+              <div class="slide"> 
+                <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel                                                                                    </span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- contain main informative part of the site-->
     <main id="main">
       <div class="container">
@@ -132,6 +199,7 @@
         </div>
       </div>
     </main>
-    <!--include ../partials/foot-->
+    <script src="assets/js/vendor.min.js" defer=""></script>
+    <script src="assets/js/app.js" defer=""></script>
   </body>
 </html>

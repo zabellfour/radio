@@ -1,28 +1,36 @@
-.container{
-    padding:0 15px;
-    max-width:1210px;
+.container {
+    padding: 0 15px;
+    max-width: 1210px;
     margin: 0 auto;
     @extend %clearfix;
 }
 
+#wrapper {
+    overflow: hidden;
+}
+
 .content-holder {
-	display:flex;
-	justify-content: space-between;
-	.content {width:66%;}
-	.content:only-child {width:100%;}
+    display: flex;
+    justify-content: space-between;
+    .content {
+        width: 66%;
+    }
+    .content:only-child {
+        width: 100%;
+    }
 }
 
 .heading {
-	background: $gray-light;
-	margin:0 0 15px;
-	.h3 {
-		font: bold 37px/43px 'TradeGothic';
-		display:inline-block;
-		vertical-align:middle;
-		margin:0;
-		color:$white;
-		background:$red;
-		padding:0 22px;
-		text-transform:uppercase;
-	}
+    background: $gray-light;
+    margin: 0 0 15px;
+    .h3 {
+        font: bold 37px/43px 'TradeGothic';
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        color: $white;
+        background: $red;
+        padding: 0 22px;
+        text-transform: uppercase;
+    }
 }
