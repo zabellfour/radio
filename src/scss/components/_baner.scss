@@ -1,0 +1,45 @@
+/* baners style */
+
+.baner-main {
+	margin: 0 0 20px;
+	background: $gray-light;
+	display:flex;
+	justify-content: space-between;
+	.img-box {width:59%;}
+	.text-box {
+		font: bold  25px/30px 'TradeGothic';
+		width:41%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #084e8f;
+		.text {padding:24px 38px 0 46px;}
+		.h3 {
+			font-size:60px;
+			line-height:62px;
+			margin:0 0 4px;
+			color:#dd1424;
+			text-transform:uppercase;
+		}
+		.info {text-transform:uppercase;}
+		.btn {
+			font: 16px/1 'TradeGothic';
+			border-radius:50px;
+			background:#dd1424;
+			text-transform:uppercase;
+			color:#fff;
+			padding:5px 10px;
+			border:none;
+			box-shadow:none;
+			min-width: 112px;
+			letter-spacing: 1px;
+		}
+		.btn-holder {text-align:right;}
+	}
+	img {
+		width:100%;
+		vertical-align:top;
+	}
+	p {margin:0;}
+}

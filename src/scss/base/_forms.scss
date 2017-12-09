@@ -22,7 +22,7 @@ textarea {
   padding: $form-element-padding;
 
   &:focus {
-    border-color: $form-element-focus-border-color;
+    outline:none;
   }
 
   @include placeholder {

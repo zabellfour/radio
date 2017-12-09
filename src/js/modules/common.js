@@ -4,6 +4,7 @@
 
 var common = {
     headerSlider: function() {
+        console.log(12);
         var $slEl = $('.program-slider');
         if (!$slEl.length) {
             return false;
@@ -13,6 +14,7 @@ var common = {
             dots: false,
             nav: true
         });
+
     }
 };
 

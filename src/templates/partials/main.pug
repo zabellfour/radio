@@ -1,0 +1,113 @@
+// contain main informative part of the site
+main#main
+    .container
+        // panel menu of the page
+        .panel-top
+            .nav-top-holder
+                nav
+                    a(href="#") Actualités
+                    a(href="#") Programmes
+                    a(href="#") Vidéos
+                    a(href="#") RRB
+                    a(href="#") Jeux
+                        span.info-box
+                            span.info1 25 00 00*
+                            span.info2 standard jeux
+            .login-holder
+                .logo
+                    span.text1 Club RRB
+                    span.text2 Je m‘inscris
+                .login-form
+                    form(action='#')
+                        .row-input
+                            input.form-control(type='text', placeholder='Identifiant' name='name')
+                        .row-input
+                            input.form-control.form-control-btn(type='text', placeholder='Mot de passe' name='name')
+                            button.btn(type='submit') OK
+        // baner of the page
+        .baner-main
+            .img-box
+                img(src="assets/images/image-main01.jpg", alt="image description")
+            .text-box
+                .text
+                    span.info l’invité du matin
+                    h3.h3 Annick girardin 
+                    p La ministre des Outre Mer a dressé le bilan de sa venue ce matin
+                    .btn-holder
+                        button.btn écouter
+        .content-holder
+            // content of the page
+            .content
+                .heading
+                    h3.h3 à la une
+                .top-post-home
+                    h4.h4 Lorem ipsum sin dolores sint occaecat mollit
+                    p The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.
+                    .img-box
+                        img(src="assets/images/image-main02.jpg", alt="image description")
+                // posts of the page
+                .three-column
+                    .box
+                        img(src="assets/images/image-main03.jpg", alt="image description")
+                        p Deux jours pour défendre l’îlot Sainte-Marie
+                    .box
+                        img(src="assets/images/image-main04.jpg", alt="image description")
+                        p Montravel met tout le monde d’accord en danse
+                    .box
+                        .title
+                            span TOUTE l’INFO
+                            .logo-box
+                                img(src="assets/images/logo-main01.png", alt="Europe")
+                        .block
+                            .row
+                                span.data 9 Octobre 2017
+                                p Ut enim ad minim veniam, quis nostrud exercitation
+                            .row
+                                span.data 6 Octobre 2017
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit 
+                            .row
+                                span.data 3 Octobre 2017
+                                p Duis commodo elit molestie dolore fugiat nulla pariatur.
+                .heading
+                    h3.h3 à ré écouter
+                // video of the page
+                .video-post
+                    .box
+                        .img
+                            img(src="assets/images/image-main05.jpg", alt="image description")
+                        .text
+                            .title
+                                h4.h4 Food That Actually Taste Better When You Freeze
+                                span.btn-play
+                            p Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus.
+                    .box
+                        .row
+                            .img-row
+                                img(src="assets/images/image-main06.jpg", alt="image description")
+                            .text-row
+                                span.data 28 juillet 2017
+                                h4.h4 Duis commodo elit sed nisi molestie
+                                span.btn-play
+                        .row
+                            .img-row
+                                img(src="assets/images/image-main07.jpg", alt="image description")
+                            .text-row
+                                span.data 28 juillet 2017
+                                h4.h4 Duis commodo elit sed nisi molestie
+                                span.btn-play
+                        .row
+                            .img-row
+                                img(src="assets/images/image-main08.jpg", alt="image description")
+                            .text-row
+                                span.data 28 juillet 2017
+                                h4.h4 Duis commodo elit sed nisi molestie
+                                span.btn-play
+                // slider of the page
+                .slider-playlist
+                    span.slider-title
+                // facebook of the page
+                .facebook-baner
+                    h4.h4 retrouvez-nous sur facebook
+                    .img
+                        img(src="assets/images/image-main12.jpg", alt="image description")
+            include ../partials/sidebar
