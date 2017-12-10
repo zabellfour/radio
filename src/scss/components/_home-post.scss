@@ -93,7 +93,7 @@
 			width:100%;
 			display:flex;
 			justify-content: space-between;
-			padding:19px 19px 0;
+			padding:10px 19px 10px;
 			margin:0;
 		}
 		&:last-child {
@@ -160,8 +160,9 @@
 	}
 	img {
 		width:100%;
-		vertical-align:bottoёm;
+		vertical-align:bottom;
 		margin:0 0 13px;
+		@include media('<tablet') {margin:0;}
 	}
 	p {margin:0;}
 }
