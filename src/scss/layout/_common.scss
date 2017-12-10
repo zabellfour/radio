@@ -1,6 +1,49 @@
-.container{
-    padding:0 15px;
-    max-width:1210px;
-    margin: 0 auto;
+.container {
     @extend %clearfix;
+    padding: 0 15px;
+    max-width: 1210px;
+    margin: 0 auto;
+    @include media('<tablet') {padding:0 18px;}
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+.content-holder {
+    display: flex;
+    justify-content: space-between;
+    @include media('<tablet') {display:block;}
+    .content {
+        width: 66%;
+        @include media('<tablet') {width:100%;}
+    }
+    .content:only-child {
+        width: 100%;
+    }
+}
+
+.heading {
+    background: $gray-light;
+    margin: 0 0 15px;
+    @include media('<tablet') {margin:0 0 4px;}
+    .h3 {
+        font: bold 37px/43px 'TradeGothic';
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        color: $white;
+        background: $red;
+        padding: 0 22px;
+        text-transform: uppercase;
+        @include media('<desktop') {
+            font-size:24px;
+            line-height:30px;
+        }
+        @include media('<tablet') {
+            font-size: 30px;
+            line-height: 32px;
+            padding:4px 19px;
+        }
+    }
 }

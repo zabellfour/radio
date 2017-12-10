@@ -1,0 +1,83 @@
+.program-slider {
+    padding: 0 56px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 56px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: $blue;
+        z-index: 2;
+    }
+    .owl-nav {
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            margin: 0 !important;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: block;
+            font-size: 0;
+            background: #f5f5f5;
+            &:before {
+                content: "\e911";
+                font-family: 'icomoon';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 13px;
+                color: $blue;
+            }
+        }
+        .owl-next {
+            right: 0;
+            left: auto;
+            &:before {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+        }
+    }
+    .slide {
+        border-left: 1px solid #6b95bc;
+        padding: 2px 5px;
+        color: $light-blue;
+        display: flex;
+        font-size: 14px;
+        line-height: 1;
+        justify-content: center;
+        &.now-playing {
+            color: $yellow;
+            .time {
+                &:before {
+                    content: '';
+                    @include triangle(6px 5px, $yellow, down);
+                    position: absolute;
+                    top: -2px;
+                    left: 50%;
+                    transform: translateX(-6px);
+                }
+            }
+        }
+        .time {
+            font-size: 33px;
+            font-weight: bold;
+            padding-right: 5px;
+            position: relative;
+        }
+        .text {
+            .title {
+                font-size: 18px;
+            }
+            * {
+                display: block;
+            }
+        }
+    }
+}
