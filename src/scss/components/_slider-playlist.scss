@@ -6,11 +6,17 @@
 		text-transform:uppercase;
 		margin:0 0 10px;
 		color:$blue;
+		@include media('<tablet') {
+			font-size:30px;
+			line-height:32px;
+			margin:0 0 8px;
+		}
 	}
 }
 
 .slider-playlist {
 	margin:0 0 33px;
+	@include media('<tablet') {margin:0 0 21px;}
 	&.owl-theme {
 		.owl-prev,
 		.owl-next {
@@ -24,6 +30,11 @@
 			border-radius:100px;
 			background:$white;
 			font-size:0;
+			@include media('<tablet') {
+				width:25px;
+				height:25px;
+				left:0;
+			}
 			&:before {
 				@extend [class^="icon-"];
 				@extend .icon-arrow-left;
@@ -34,6 +45,7 @@
 				color: #084e8f;
 				font-size:21px;
 				font-weight:bold;
+				@include media('<tablet') {font-size:11px;}
 			}
 			&:hover {
 				background:$white;
@@ -43,6 +55,10 @@
 		.owl-next {
 			left:auto;
 			right:10px;
+			@include media('<tablet') {
+				left:auto;
+				right:0;
+			}
 			&:before {
 				transform:translate(-50%,-50%) rotate(180deg);
 			}
@@ -75,6 +91,10 @@
 		background: rgba(8,120,153,.5);
 		text-transform:uppercase;
 		color: $yellow;
+		@include media('<tablet') {
+			font-size:13px;
+			line-height:15px;
+		}
 		.text1 {
 			display:block;
 		}
@@ -83,11 +103,19 @@
 			font-size:37px;
 			line-height:39px;
 			color: $white;
+			@include media('<tablet') {
+				font-size:22px;
+				line-height:27px;
+			}
 		}
 		.text3 {
 			display:block;
 			font-size:18px;
 			line-height:20px;
+			@include media('<tablet') {
+				font-size:11px;
+				line-height:13px;
+			}
 		}
 		.info {
 			display:inline-flex;
@@ -97,6 +125,11 @@
 			font-size: 28px;
 			padding: 5px;
 			border-radius:8px;
+			@include media('<tablet') {
+				font-size: 18px;
+				padding: 4px 3px;
+				border-radius: 5px;
+			}
 		}
 		.number {
 			border-radius:100px;
@@ -108,6 +141,11 @@
 			align-items: center;
 			justify-content: center;
 			color: $white;
+			@include media('<tablet') {
+				width:19px;
+				height:19px;
+				font-size:12px;
+			}
 		}
 	}
 	.btn-box {

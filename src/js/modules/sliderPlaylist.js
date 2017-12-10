@@ -5,9 +5,16 @@ var sliderPlaylist = {
             return;
         }
         slider.owlCarousel({
-            items: 3,
             dots: false,
-            nav: true
+            nav: true,
+            responsive : {
+                0 : {
+                    items: 2,
+                },
+                1024 : {
+                    items: 3,
+                }
+            }
         });
 
     }

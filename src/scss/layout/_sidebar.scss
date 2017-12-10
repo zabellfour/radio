@@ -6,8 +6,32 @@ $sidebar-bg: $gray-light;
 	background:$sidebar-bg;
 	padding:14px 46px 10px 33px;
 	margin:0 0 15px;
+	@include media('<widescreen') {
+		padding:15px 10px;
+	}
+	@include media('<tablet') {
+		width:100%;
+		padding:31px 0 100px;
+		margin: 0;
+		position:relative;
+		&:after,
+		&:before {
+			content:'';
+			position:absolute;
+			top:0;
+			height:100%;
+			width:18px;
+			right:100%;
+			background: $sidebar-bg;
+		}
+		&:after {
+			right:auto;
+			left:100%;
+		}
+	}
 	.img-ad {
 		margin:0 0 17px;
+		@include media('<tablet') {display:none;}
 		img {
 			width:100%;
 			vertical-align:top;
@@ -28,21 +52,41 @@ $sidebar-bg: $gray-light;
 	line-height:52px;
 	text-decoration:none;
 	padding:18px 18px 33px 30px;
+	@include media('<widescreen') {
+		margin: 0 -10px 20px;
+		font-size:36px;
+		line-height:38px;
+		padding:15px;
+	}
+	@include media('<desktop') {
+		font-size:23px;
+		line-height:25px;
+	}
+	@include media('<tablet') {display:none;}
 	.img {
 		min-width:70px;
 		max-width:70px;
+		@include media('<desktop') {
+			min-width:50px;
+			max-width:50px;
+		}
 	}
 	img {width:100%;}
 }
 
 .sidebar-list {
 	margin:0 0 17px;
+	@include media('<tablet') {margin:0 0 9px;}
 	.h4 {
 		text-transform:uppercase;
 		color:$blue;
 		margin:0 0 6px;
 		font-size:25px;
 		line-height:27px;
+		@include media('<tablet') {
+			font-size:22px;
+			line-height:24px;
+		}
 	}
 	.block {
 		font-weight:bold;
@@ -52,16 +96,49 @@ $sidebar-bg: $gray-light;
 		line-height:37px;
 		text-transform:uppercase;
 		color:$white;
+		@include media('<widescreen') {
+			font-size:30px;
+			line-height:32px;
+			padding:15px 15px 5px;
+		}
+		@include media('<desktop') {
+			font-size:24px;
+			line-height:26px;
+		}
+		@include media('<tablet') {
+			font-size:17px;
+			line-height:18px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			padding:20px 15px 8px;
+		}
 	}
 	.row {
 		margin:0 0 24px;
 		display:flex;
 		justify-content: space-between;
+		align-items: center;
+		@include media('<tablet') {
+			width:47%;
+			margin:0 0 17px;
+		}
 	}
 	.img {
 		min-width:80px;
 		width:80px;
 		margin:-8px 0 0;
+		@include media('<widescreen') {
+			min-width:60px;
+			max-width:60px;
+		}
+		@include media('<desktop') {
+			min-width:40px;
+			max-width:40px;
+		}
+		@include media('<tablet') {
+			padding:8px 7px 0 0;
+		}
 	}
 	img {
 		width:100%;
@@ -69,6 +146,7 @@ $sidebar-bg: $gray-light;
 }
 
 .tab-sidebar {
+	@include media('<tablet') {display:none;}
 	.h4 {
 		text-transform:uppercase;
 		color:$blue;
@@ -90,6 +168,10 @@ $sidebar-bg: $gray-light;
 		width:49%;
 		background:#5a87b2;
 		text-align:center;
+		@include media('<desktop') {
+			font-size:14px;
+			line-height:16px;
+		}
 		&.active a {
 			color:#fee934;
 			background:#084e8f;
@@ -107,6 +189,9 @@ $sidebar-bg: $gray-light;
 		margin:0 0 18px;
 		padding:0 0 18px;
 		border-bottom:1px solid #dee5e9;
+		@include media('<desktop') {
+			display:block;
+		}
 		&:last-child {
 			border:none;
 			margin:0 0 11px;
@@ -115,11 +200,19 @@ $sidebar-bg: $gray-light;
 	.img-box {
 		width:43%;
 		position:relative;
+		@include media('<desktop') {
+			width:100%;
+			margin:0 0 10px;
+		}
 	}
 	.text-box {
 		width:57%;
 		color: $blue;
 		padding:0 0 0 17px;
+		@include media('<desktop') {
+			width:100%;
+			padding:0;
+		}
 	}
 	.data {
 		font-size: 15px;
@@ -169,6 +262,9 @@ $sidebar-bg: $gray-light;
 		line-height: 9px;
 		font-size: 55px;
 		text-shadow: -2px 0 #fee934, 0 2px #fee934, 2px 0 #fee934, 0 -2px #fee934;
+		@include media('<desktop') {
+			font-size:37px;
+		}
 	}
 	img {
 		width:100%;
@@ -190,6 +286,13 @@ $sidebar-bg: $gray-light;
 
 .baners-sidebar {
 	margin:0 -46px 15px -33px;
+	@include media('<widescreen') {
+		margin:0 -10px 15px;
+	}
+	@include media('<tablet') {
+		text-align:center;
+		margin:0 0 15px;
+	}
 	.row {
 		font-size: 53px;
 		line-height:58px;
@@ -198,19 +301,49 @@ $sidebar-bg: $gray-light;
 		background:#fee934;
 		padding:15px 31px 13px;
 		margin:0 0 7px;
+		@include media('<widescreen') {
+			font-size:40px;
+			line-height:43px;
+		}
+		@include media('<desktop') {
+			padding:15px;
+			font-size:30px;
+			line-height:32px;
+		}
+		@include media('<tablet') {
+			padding:6px 15p 15px;
+			font-size:25px;
+			line-height:27px;
+		}
 		.text1 {
 			display:block;
 			font-size:45px;
 			line-height:41px;
+			@include media('<widescreen') {
+				font-size:32px;
+				line-height:34px;
+			}
+			@include media('<tablet') {
+				font-size:21px;
+				line-height:23px;
+				display:inline-block;
+			}
 		}
-		.text2 {
-			font-weight:normal;
-		}
+		.text2 {font-weight:normal;}
 	}
 	.icon-list{
 		@extend %listreset;
 		display:flex;
 		margin:-3px 0 0;
-		li {margin:0 7px 0 0;}
+		@include media('<desktop') {align-items: center;}
+		@include media('<tablet') {
+			justify-content: center;
+			margin:3px 0 0;
+		}
+		li {
+			margin:0 7px 0 0;
+			@include media('<desktop') {width:30%;}
+			@include media('<tablet') {width:13%;}
+		}
 	}
 }

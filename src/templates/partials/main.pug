@@ -51,11 +51,15 @@ main#main
                 // posts of the page
                 .three-column
                     .box
-                        img(src="assets/images/image-main03.jpg", alt="image description")
-                        p Deux jours pour défendre l’îlot Sainte-Marie
+                        .img-holder
+                            img(src="assets/images/image-main03.jpg", alt="image description")
+                        .text-holder
+                            p Deux jours pour défendre l’îlot Sainte-Marie
                     .box
-                        img(src="assets/images/image-main04.jpg", alt="image description")
-                        p Montravel met tout le monde d’accord en danse
+                        .img-holder
+                            img(src="assets/images/image-main04.jpg", alt="image description")
+                        .text-holder
+                            p Montravel met tout le monde d’accord en danse
                     .box
                         .title
                             span TOUTE l’INFO
@@ -89,23 +93,29 @@ main#main
                             .img-row
                                 img(src="assets/images/image-main06.jpg", alt="image description")
                             .text-row
-                                span.data 28 juillet 2017
-                                h3.h3 Duis commodo elit sed nisi molestie
-                                a(href="#").btn-play
+                                .block
+                                    span.data 28 juillet 2017
+                                    h3.h3 Duis commodo elit sed nisi molestie
+                                .block
+                                    a(href="#").btn-play
                         .row
                             .img-row
                                 img(src="assets/images/image-main07.jpg", alt="image description")
                             .text-row
-                                span.data 28 juillet 2017
-                                h3.h3 Duis commodo elit sed nisi molestie
-                                a(href="#").btn-wifi
+                                .block
+                                    span.data 28 juillet 2017
+                                    h3.h3 Duis commodo elit sed nisi molestie
+                                .block
+                                    a(href="#").btn-wifi
                         .row
                             .img-row
                                 img(src="assets/images/image-main08.jpg", alt="image description")
                             .text-row
-                                span.data 28 juillet 2017
-                                h3.h3 Duis commodo elit sed nisi molestie
-                                a(href="#").btn-wifi
+                                .block
+                                    span.data 28 juillet 2017
+                                    h3.h3 Duis commodo elit sed nisi molestie
+                                .block
+                                    a(href="#").btn-wifi
                 // slider of the page
                 .slider-playlist-box
                     h4.h4 la playlist rrb
