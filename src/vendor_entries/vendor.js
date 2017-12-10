@@ -4,5 +4,6 @@
 
 module.exports = [
   './node_modules/jquery/dist/jquery.js',
+  './node_modules/bootstrap/js/tab.js',
   './node_modules/owl.carousel/dist/owl.carousel.js'
 ];
