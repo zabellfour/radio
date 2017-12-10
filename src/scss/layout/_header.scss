@@ -2,12 +2,17 @@
     overflow: hidden;
     position: relative;
     padding-top: 42px;
+    margin-bottom: 10px;
     @include media('<desktop') {
         padding-top: 36px;
     }
     @include media('<tablet') {
         overflow: visible;
         padding-top: 0;
+        margin-bottom: 40px;
+    }
+    .container.mh-item{
+        margin-bottom: 10px;
     }
 }
 

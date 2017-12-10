@@ -1,6 +1,116 @@
 // sidebar of the page
 .sidebar
+    // Ad panes of the page
     .img-ad
         img(src="assets/images/image-sidebar01.jpg", alt="image description")
+    // Facebook widget of the page
+    a(href="#").facebook-link
+        span Rejoignez-nous sur
+            strong Facebook
+        .img
+             img(src="assets/images/facebook-icon.png", alt="image description")
+    // Facebook widget of the page
+    .sidebar-list
+        h4.h4 boîte à outils
+        .block
+            .row
+                span Donnez votre avis
+                .img
+                    img(src="assets/images/sidebar-icon01.png", alt="image description")
+            .row
+                span posez vos questions
+                .img
+                    img(src="assets/images/sidebar-icon02.png", alt="image description")
+            .row
+                span réagissez en direct
+                .img
+                    img(src="assets/images/sidebar-icon03.png", alt="image description")
+            .row
+                span Vous avez une idée
+                .img
+                    img(src="assets/images/sidebar-icon04.png", alt="image description")
+    // Tab panes of the page
+    .tab-sidebar
+        h4.h4 vos émissions
+        ul.nav.nav-pills
+            li.active
+                a(href="#tab1" data-toggle="tab") les + écoutées
+            li
+                a(href="#tab2" data-toggle="tab") les + vues
+        .tab-content
+            .tab-pane.active#tab1
+                .row
+                    .img-box
+                        img(src="assets/images/image-sidebar03.jpg", alt="image description")
+                        .panel
+                            span.number 1
+                            span.info 240
+                    .text-box
+                        span.data 28 juillet 2017
+                        a(href="#").link Duis commodo elit sed nisi molestie
+                .row
+                    .img-box
+                        img(src="assets/images/image-sidebar03.jpg", alt="image description")
+                        .panel
+                            span.number 2
+                            span.info 270
+                    .text-box
+                        span.data 28 juillet 2017
+                        a(href="#").link Duis commodo elit sed nisi molestie
+                .row
+                    .img-box
+                        img(src="assets/images/image-sidebar03.jpg", alt="image description")
+                        .panel
+                            span.number 3
+                            span.info 220
+                    .text-box
+                        span.data 28 juillet 2017
+                        a(href="#").link Duis commodo elit sed nisi molestie
+            .tab-pane#tab2
+                .row
+                    .img-box
+                        img(src="assets/images/image-sidebar03.jpg", alt="image description")
+                        .panel
+                            span.number 1
+                            span.info 240
+                    .text-box
+                        span.data 20 juillet 2017
+                        a(href="#").link Duis elit sed nisi molestie commodo
+                .row
+                    .img-box
+                        img(src="assets/images/image-sidebar03.jpg", alt="image description")
+                        .panel
+                            span.number 2
+                            span.info 20
+                    .text-box
+                        span.data 10 juillet 2017
+                        a(href="#").link Duis nisicom modo elit sed  molestie
+                .row
+                    .img-box
+                        img(src="assets/images/image-sidebar03.jpg", alt="image description")
+                        .panel
+                            span.number 3
+                            span.info 150
+                    .text-box
+                        span.data 18 juillet 2017
+                        a(href="#").link Duis comed nisi molestie modo elit s
+    // Banner list of the page
+    .baners-sidebar
+        .row
+            span.text 
+                span.text1 Bientôt...
+                | CARTE CHANCE
+            ul.icon-list
+                li
+                    img(src="assets/images/sidebar-icon05.png", alt="image description")
+                li
+                    img(src="assets/images/sidebar-icon06.png", alt="image description")
+                li
+                    img(src="assets/images/sidebar-icon07.png", alt="image description")
+        .row
+            span.text
+                span.text2 envoyez 
+                | CHANCE Votre prénom  au 3146*
+    // Ad panes of the page
     .img-ad
         img(src="assets/images/image-sidebar02.jpg", alt="image description")

@@ -68,8 +68,7 @@
 
 .mob-wrapper {
     @include media('<tablet') {
-    min-height: 100vh;
-    background: #ececec;
+      
     }
     @include media('<widescreen') {
         margin-left: -15px;

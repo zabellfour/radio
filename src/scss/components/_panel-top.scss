@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     background: #ececec;
-    margin: 10px 0;
+    margin: 10px 0 0;
     @include media('<tablet') {
         flex-wrap: wrap;
         margin: 0;
@@ -176,7 +176,7 @@
             right: 0;
             text-align: center;
         }
-    }
+    } 
 }
 
 .login-form {
