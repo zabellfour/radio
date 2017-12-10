@@ -1,110 +1,117 @@
 header#header
-    .container
-        .header-top
-            a.logo-full(href="#")
-                img(src="assets/images/logo-full.png", alt="Radio Rythme Blev")
-            ul.nav-list
-                li
-                    a(href="#")
-                        i.icon-radio
-                        strong.link-text écouter
-                li
-                    a(href="#")
-                        i.icon-tv
-                        strong.link-text regarder
-                li
-                    a(href="#")
-                        i.icon-podcast
-                        strong.link-text podcasts
-                li
-                    a(href="#")
-                        i.icon-frequence
-                        strong.link-text fréquences
-            form.search-form(action="#")
-                input(type="text" placeholder="Rechercher")
-                button(type="submit")
-                    i.icon-search
-    .header-center
-        .header-center-top
-            .container
-                .header-center-top-wrapper
-                    a.logo(href="#")
-                        img(src="assets/images/logo-color.png", alt="RRB")
-                    .hero-holder
-                        .name-holder
-                            span.descr à l’antenne
-                            strong.name jeudi hippique
-                        img(src="assets/images/header-hero.png", alt="jeudi hippique")
-                    .apps-box
-                        .player
-                            .play-info
-                                span.top-title Player
-                                span.main-title écoutez le direct
-                                .progress
-                                    span.remaining(style='width:70%;')
-                                .bottom-info
-                                    span.track-info Space oddity
-                                    span.author DAVID BOWIE
-                            button.play-button 
-                                i.icon-play
-                        .weather-holder
-                            img(src="assets/images/weather-widget.png", alt="weather widget")
-                        .clock-holder
-                            img(src="assets/images/clock.png", alt="clock")
-        .header-center-bottom
-            .container
-                .owl-carousel.owl-theme.program-slider
-                    .slide.now-playing
-                        time.time(datetime="2017-05-15 7:30") 7h30
-                        .text
-                            strong.title L 'INVITé DU MATIN
-                            span.text-descr par Camille Blondel
-                    .slide 
-                        time.time(datetime="2017-05-15 8:00") 8h00
-                        .text
-                            strong.title L 'INVITé DU MATIN
-                            span.text-descr par Camille Blondel
-                    .slide 
-                        time.time(datetime="2017-05-15 9:00") 9h00
-                        .text
-                            strong.title L 'INVITé DU MATIN
-                            span.text-descr par Camille Blondel
-                    .slide 
-                        time.time(datetime="2017-05-15 10:00") 10h00
-                        .text
-                            strong.title L 'INVITé DU MATIN
-                            span.text-descr par Camille Blondel
-                    .slide 
-                        time.time(datetime="2017-05-15 11:30") 11h30
-                        .text
-                            strong.title L 'INVITé DU MATIN
-                            span.text-descr par Camille Blondel
-                    .slide 
-                        time.time(datetime="2017-05-15 12:30") 12h30
-                        .text
-                            strong.title L 'INVITé DU MATIN
-                            span.text-descr par Camille Blondel                                                                                    
-    .container
-        // panel menu of the page
-        .panel-top
-            .nav-top-holder
-                nav
-                    a(href="#") Actualités
-                    a(href="#") Programmes
-                    a(href="#") Vidéos
-                    a(href="#") RRB
-                    a(href="#") Jeux
-                        span.info-box
-                            span.info1 25 00 00*
-                            span.info2 standard jeux
-            .login-holder
-                .logo
-                    span.text1 Club RRB
-                    a(href="#" target="_blank").text2 Je m‘inscris
-                .login-form
-                    form(action='#')
-                        .row-input
-                            input.form-control(type='text', placeholder='Identifiant' name='name')
-                        .row-input
-                            input.form-control.form-control-btn(type='password', placeholder='Mot de passe' name='name')
-                            button.btn(type='submit') OK
+    .menu-holder
+        .header-center
+            .header-center-top
+                .container
+                    .header-center-top-wrapper
+                        .mob-menu
+                            button.menu-opener
+                                .burger-holder
+                                    span
+                                    span
+                                    span
+                                span.text MENU
+                        a.logo(href="#")
+                            img(src="assets/images/logo-color.png", alt="RRB")
+                        .hero-holder
+                            .name-holder
+                                span.descr à l’antenne
+                                strong.name jeudi hippique
+                            img(src="assets/images/header-hero.png", alt="jeudi hippique")
+                        .apps-box
+                            .player
+                                .play-info
+                                    span.top-title Player
+                                    span.main-title écoutez le direct
+                                    .progress
+                                        span.remaining(style='width:70%;')
+                                    .bottom-info
+                                        span.track-info Space oddity
+                                        span.author DAVID BOWIE
+                                button.play-button 
+                                    i.icon-play
+                            .weather-holder
+                                img(src="assets/images/weather-widget.png", alt="weather widget")
+                            .clock-holder
+                                img(src="assets/images/clock.png", alt="clock")
+            .header-center-bottom
+                .container
+                    .owl-carousel.owl-theme.program-slider
+                        .slide.now-playing
+                            time.time(datetime="2017-05-15 7:30") 7h30
+                            .text
+                                strong.title L 'INVITé DU MATIN
+                                span.text-descr par Camille Blondel
+                        .slide 
+                            time.time(datetime="2017-05-15 8:00") 8h00
+                            .text
+                                strong.title L 'INVITé DU MATIN
+                                span.text-descr par Camille Blondel
+                        .slide 
+                            time.time(datetime="2017-05-15 9:00") 9h00
+                            .text
+                                strong.title L 'INVITé DU MATIN
+                                span.text-descr par Camille Blondel
+                        .slide 
+                            time.time(datetime="2017-05-15 10:00") 10h00
+                            .text
+                                strong.title L 'INVITé DU MATIN
+                                span.text-descr par Camille Blondel
+                        .slide 
+                            time.time(datetime="2017-05-15 11:30") 11h30
+                            .text
+                                strong.title L 'INVITé DU MATIN
+                                span.text-descr par Camille Blondel
+                        .slide 
+                            time.time(datetime="2017-05-15 12:30") 12h30
+                            .text
+                                strong.title L 'INVITé DU MATIN
+                                span.text-descr par Camille Blondel
+        .container.mh-item
+            .mob-wrapper.mh-item
+                .header-top
+                    a.logo-full(href="#")
+                        img(src="assets/images/logo-full.png", alt="Radio Rythme Blev")
+                    ul.nav-list
+                        li
+                            a(href="#")
+                                i.icon-radio
+                                strong.link-text écouter
+                        li
+                            a(href="#")
+                                i.icon-tv
+                                strong.link-text regarder
+                        li
+                            a(href="#")
+                                i.icon-podcast
+                                strong.link-text podcasts
+                        li
+                            a(href="#")
+                                i.icon-frequence
+                                strong.link-text fréquences
+                    form.search-form(action="#")
+                        input(type="text" placeholder="Rechercher")
+                        button(type="submit")
+                            i.icon-search                                                                                    
+                .panel-top
+                    .nav-top-holder
+                        nav
+                            a(href="#") Actualités
+                            a(href="#") Programmes
+                            a(href="#") Vidéos
+                            a(href="#") RRB
+                            a(href="#") Jeux
+                                span.info-box
+                                    span.info1 25 00 00*
+                                    span.info2 standard jeux
+                    .login-holder
+                        .logo
+                            span.text1 Club RRB
+                            a(href="#" target="_blank").text2 Je m‘inscris
+                        .login-form
+                            form(action='#')
+                                .row-input
+                                    input.form-control(type='text', placeholder='Identifiant' name='name')
+                                .row-input
+                                    input.form-control.form-control-btn(type='password', placeholder='Mot de passe' name='name')
+                                    button.btn(type='submit') OK

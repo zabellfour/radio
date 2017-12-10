@@ -1,0 +1,258 @@
+.apps-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 26px;
+    @include media('<widescreen') {
+        padding-top: 10px;
+        float: right;
+    }
+    @include media('<desktop') {
+        padding-top: 3px;
+    }
+    @include media('<tablet') {
+        margin: 0 0 0 auto;
+        padding-top: 0;
+    }
+    @include media('<phone') {
+        margin-top: 10px;
+    }
+    .player {
+        @include media('<widescreen') {
+            width: 160px;
+        }
+        @include media('<desktop') {
+            width: 130px;
+            height: 84px;
+        }
+        @include media('<tablet') {
+            height: 46px;
+            width: 104px;
+            padding: 3px 3px 1px 6px;
+            border-radius: 9px;
+        }
+        @include media('<phone') {
+            width: 88px;
+            margin-right: 4px;
+        }
+        flex-shrink: 0;
+        width: 204px;
+        height: 104px;
+        text-align: left;
+        background: #f5f5f5;
+        border-radius: 20px;
+        margin-right: 8px;
+        color: $blue;
+        padding: 6px 11px 5px 15px;
+        text-transform: uppercase;
+        line-height: 1.1;
+        position: relative;
+        .top-title {
+            font-size: 18px;
+            display: block;
+            font-weight: bold;
+            @include media('<widescreen') {
+                font-size: 16px;
+            }
+            @include media('<desktop') {
+                font-size: 13px;
+            }
+            @include media('<tablet') {
+                font-size: 8px;
+            }
+        }
+        .main-title {
+            font-size: 25px;
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: bold;
+            margin-bottom: 4px;
+            overflow: hidden;
+            @include media('<widescreen') {
+                font-size: 18px;
+            }
+            @include media('<desktop') {
+                font-size: 14px;
+            }
+            @include media('<tablet') {
+                font-size: 11px;
+                margin-bottom: 1px;
+            }
+        }
+        .progress {
+            background: #7ca0c1;
+            height: 4px;
+            position: relative;
+            margin-left: 45px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            @include media('<widescreen') {
+                margin-left: 22px;
+            }
+            @include media('<desktop') {
+                font-size: 15px;
+                margin-left: 0;
+            }
+            @include media('<tablet') {
+                margin-left: 24px;
+                height: 2px;
+            }
+            @include media('<tablet') {
+                margin-left: 18px;
+                margin-bottom: 1px;
+            }
+            .remaining {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 4px;
+                background: $blue;
+                @include media('<tablet') {
+                    height: 2px;
+                }
+            }
+        }
+        .bottom-info {
+            padding-left: 42px;
+            @include media('<widescreen') {
+                padding-left: 22px;
+            }
+            @include media('<desktop') {
+                padding-left: 0;
+            }
+            @include media('<tablet') {
+                padding-left: 24px;
+            }
+            @include media('<tablet') {
+                padding-left: 17px;
+            }
+            .track-info {
+                display: block;
+                padding-left: 10px;
+                font-style: italic;
+                font-size: 12px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                letter-spacing: 1px;
+                font-family: $base-font-myriad;
+                @include media('<widescreen') {
+                    font-size: 11px;
+                }
+                @include media('<desktop') {
+                    font-size: 10px;
+                    padding-left: 0;
+                }
+                @include media('<tablet') {
+                    font-size: 6px;
+                }
+            }
+            .author {
+                font-size: 22px;
+                font-weight: bold;
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                @include media('<widescreen') {
+                    font-size: 17px;
+                }
+                @include media('<tablet') {
+                    font-size: 10px;
+                }
+            }
+        }
+        .play-button {
+            display: block;
+            border: none;
+            background: $red;
+            font-size: 28px;
+            height: 66px;
+            width: 66px;
+            border: 2px solid $red;
+            color: $white;
+            border-radius: 50%;
+            position: absolute;
+            left: -15px;
+            bottom: -15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 12px;
+            opacity: 1;
+            @include animate(background-color color border-color);
+            @include media('<widescreen') {
+                width: 50px;
+                height: 50px;
+                bottom: -5px;
+            }
+            @include media('<desktop') {
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+                padding-left: 10px;
+                left: -20px;
+            }
+            @include media('<tablet') {
+                width: 28px;
+                height: 28px;
+                font-size: 12px;
+                left: -6px;
+                bottom: -9px;
+            }
+            @include media('<tablet') {
+                bottom: -5px;
+            }
+            &:hover {
+                color: $red;
+                background-color: $white;
+            }
+            i {
+                color: inherit;
+            }
+        }
+    }
+    .weather-holder {
+        flex-shrink: 0;
+        &>img {
+            vertical-align: top;
+        }
+        @include media('<desktop') {
+            width: 130px;
+        }
+        @include media('<tablet') {
+            display: none;
+        }
+    }
+    .clock-holder {
+        position: absolute;
+        left: calc(100% + 44px);
+        top: 10px;
+        width: 129px;
+        height: 129px;
+        flex-shrink: 0;
+        @include media('<1500px') {
+            width: 90px;
+            height: 90px;
+            top: 33px;
+            left: calc(100% + 33px);
+        }
+        @include media('<1400px') {
+            display: none;
+        }
+        @include media('<tablet') {
+            display: block;
+            width: 58px;
+            height: 58px;
+            top: 3px;
+            position: static;
+            margin-left: 50px;
+        }
+        @include media('<phone') {
+            display: none;
+        }
+    }
+}

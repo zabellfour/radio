@@ -5,12 +5,13 @@
 
 import common from './modules/common';
 
-( ($) => {
-  'use strict';
+(($) => {
+    'use strict';
 
-  // When DOM is ready
-  $(() => {
-    common.headerSlider();
-  });
+    // When DOM is ready
+    $(() => {
+        common.headerSlider();
+        common.mobMenu();
+    });
 
 })(jQuery);

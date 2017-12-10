@@ -1,6 +1,9 @@
 .program-slider {
     padding: 0 40px;
     position: relative;
+    @include media('<tablet') {
+        padding: 0 20px;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -10,6 +13,9 @@
         width: 1px;
         background: $blue;
         z-index: 2;
+        @include media('<tablet') {
+            left: 20px;
+        }
     }
     .owl-nav {
         .owl-prev,
@@ -27,6 +33,11 @@
             display: block;
             font-size: 0;
             background: #f5f5f5;
+            @include media('<tablet') {
+                width: 14px;
+                height: 14px;
+                left: 5px;
+            }
             &:before {
                 content: "\e911";
                 font-family: 'icomoon';
@@ -37,11 +48,18 @@
                 font-size: 13px;
                 color: $blue;
                 line-height: 1;
+                @include media('<tablet') {
+                    font-size: 8px;
+                }
             }
         }
         .owl-next {
             right: 12px;
             left: auto;
+            @include media('<tablet') {
+                left: auto;
+                right: 5px;
+            }
             &:before {
                 transform: translate(-50%, -50%) rotate(180deg);
             }
@@ -57,6 +75,13 @@
         @include media('<widescreen') {
             font-size: 12px;
         }
+        @include media('<tablet') {
+            font-size: 12px;
+        }
+        @include media('<phone') {
+            font-size: 8px;
+            padding: 3px 2px;
+        }
         &.now-playing {
             color: $yellow;
             .time {
@@ -67,6 +92,10 @@
                     top: -4px;
                     left: 66%;
                     transform: translateX(-6px);
+                    @include media('<tablet') {
+                        top: -4px;
+                        @include triangle(6px 4px, $yellow, down);
+                    }
                 }
             }
         }
@@ -83,6 +112,12 @@
                 font-size: 28px;
                 padding-left: 10%;
             }
+            @include media('<tablet') {
+                font-size: 18px;
+            }
+            @include media('<phone') {
+                font-size: 16px;
+            }
         }
         .text {
             flex-grow: 0;
@@ -91,6 +126,12 @@
                 font-size: 18px;
                 @include media('<widescreen') {
                     font-size: 14px;
+                }
+                @include media('<tablet') {
+                    font-size: 11px;
+                }
+                @include media('<phone') {
+                    font-size: 9px;
                 }
             }
             * {
