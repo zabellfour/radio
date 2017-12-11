@@ -47,3 +47,13 @@
         }
     }
 }
+
+.intro-text {
+    font: 14px/20px 'Arial';
+    margin:0 0 39px;
+    .h3 {
+        font: bold 40px/42px 'TradeGothic';
+        color: $blue;
+        margin:0 0 6px;
+    }
+}

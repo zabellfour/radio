@@ -1,0 +1,53 @@
+/* post list style */
+.post-list-holder {
+	.row {
+		display:flex;
+		justify-content: space-between;
+		&:not(:last-child) {
+			margin: 0 0 28px;
+			border-bottom: 1px solid #e4e4e4;
+			padding: 0 0 28px;
+		}
+	}
+	.img-box {width:32%;}
+	.text-box {
+		font: 14px/18px 'Arial';
+		width:68%;
+		padding: 0 0 0 17px;
+		margin: -5px 0 0;
+	}
+	.title {
+		margin:0 0 10px;
+		font-weight:bold;
+	}
+	.name {
+		font:bold 30px/32px 'TradeGothic';
+		color:$black;
+	}
+	.info {
+		font:bold 25px/27px 'TradeGothic';
+		color:#777272;
+	}
+	.info2 {
+		font:16px/18px 'TradeGothic';
+		color:#dd1424;
+		text-transform:uppercase;
+		font-weight:bold;
+		letter-spacing:0.8px;
+		display:block;
+		margin:0 0 4px;
+	}
+	.info3,
+	.info4 {
+		font-size:14px;
+		line-height:16px;
+		color: $blue;
+		font-weight: bold;
+		margin: 0 4px 0 0;
+		text-transform:uppercase;
+	}
+	.info4 {
+		color: $black;
+		text-transform:none;
+	}
+}

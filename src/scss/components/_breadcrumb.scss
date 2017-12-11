@@ -1,0 +1,36 @@
+/* breadcrumb style */
+$breadcrumb-color: #777272;
+
+.breadcrumb-wrap {
+	margin:0 0 27px;
+	.breadcrumb {
+		@extend %listreset;
+		display: flex;
+		font-size:14px;
+		line-height:16px;
+		font-weight: 500;
+		li {
+			color:$breadcrumb-color;
+			position:relative;
+			padding:0 15px 0 0;
+			&:not(:last-child) {
+				&:after,
+				&:before {
+					content: '';
+					position:absolute;
+					right: 3px;
+					top: 7px;
+					transform: rotate(20deg);
+					width: 7px;
+					height: 1px;
+					background:$breadcrumb-color;
+				}
+				&:before {
+					top: auto;
+					bottom: 5px;
+					transform: rotate(-20deg);
+				}
+			}
+		}
+	}
+}

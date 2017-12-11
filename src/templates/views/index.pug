@@ -1,7 +1,15 @@
 doctype html
-html(lang='en')
+html(lang='fr')
   include ../partials/head
   body
     include ../partials/header
-    include ../partials/main
+    // contain main informative part of the site
+    main#main
+        .container
+            include ../partials/banner-home
+            .content-holder
+                // content of the page
+                .content
+                    include ../partials/home-content
+                include ../partials/sidebar
     include ../partials/foot
