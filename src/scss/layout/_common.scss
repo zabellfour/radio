@@ -55,5 +55,9 @@
         font: bold 40px/42px 'TradeGothic';
         color: $blue;
         margin:0 0 6px;
+        @include media('<tablet') {
+            font-size:30px;
+            line-height:32px;
+        }
     }
 }

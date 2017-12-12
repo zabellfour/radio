@@ -4,16 +4,21 @@
 // Feel free with using ES6 here.
 
 import common from './modules/common';
-import sliderPlaylist from './modules/sliderPlaylist';
+
+//Sliders
+import sliderPrograms from './modules/sliders/sliderPrograms';
+import sliderPlaylist from './modules/sliders/sliderPlaylist';
+import sliderBaner from './modules/sliders/sliderBaner';
 
 (($) => {
     'use strict';
-
     // When DOM is ready
     $(() => {
-        common.headerSlider();
         common.mobMenu();
+        // Sliders init
+        sliderPrograms.init();
         sliderPlaylist.init();
+        sliderBaner.init();
     });
 
 

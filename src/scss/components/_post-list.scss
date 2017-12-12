@@ -1,20 +1,35 @@
 /* post list style */
 .post-list-holder {
+	margin:0 0 25px;
 	.row {
 		display:flex;
 		justify-content: space-between;
+		@include media('<phone') {
+			display:block;
+		}
 		&:not(:last-child) {
 			margin: 0 0 28px;
 			border-bottom: 1px solid #e4e4e4;
 			padding: 0 0 28px;
 		}
 	}
-	.img-box {width:32%;}
+	.img-box {
+		width:32%;
+		@include media('<phone') {
+			width:100%;
+		}
+		img {width:100%;}
+	}
 	.text-box {
 		font: 14px/18px 'Arial';
 		width:68%;
 		padding: 0 0 0 17px;
 		margin: -5px 0 0;
+		@include media('<phone') {
+			width:100%;
+			padding:0;
+			margin:0;
+		}
 	}
 	.title {
 		margin:0 0 10px;
@@ -23,10 +38,18 @@
 	.name {
 		font:bold 30px/32px 'TradeGothic';
 		color:$black;
+		@include media('<tablet') {
+			font-size:21px;
+			line-height:23px;
+		}
 	}
 	.info {
 		font:bold 25px/27px 'TradeGothic';
 		color:#777272;
+		@include media('<tablet') {
+			font-size:20px;
+			line-height:22px;
+		}
 	}
 	.info2 {
 		font:16px/18px 'TradeGothic';
@@ -36,6 +59,10 @@
 		letter-spacing:0.8px;
 		display:block;
 		margin:0 0 4px;
+		@include media('<tablet') {
+			font-size:14px;
+			line-height:16px;
+		}
 	}
 	.info3,
 	.info4 {

@@ -1,4 +1,38 @@
-/* baners style */
+/* baner slider style */
+
+.slider-baner.owl-theme {
+	.owl-dots {
+		width:41%;
+		position:absolute;
+		right: 0;
+		padding:0 0 0 41px;
+		bottom: 47px;
+		text-align: left;
+		@include media('<widescreen') {bottom:28px;}
+		@include media('<desktop') {padding:0 0 0 20px;}
+		@include media('<tablet') {
+			padding:0;
+			width:100%;
+			text-align:center;
+		}
+		.owl-dot {margin:0 5px;}
+		.owl-dot:hover span,
+		.active span {background:$red;}
+		span {
+			width:19px;
+			height:19px;
+			border:3px solid $red;
+			background:none;
+			margin:0;
+			@include media('<desktop') {
+				width:15px;
+				height:15px;
+				border-width:2px;
+			}
+			&:hover {background:$red;}
+		}
+	}
+}
 
 .baner-main {
 	margin: 0 0 20px;
@@ -14,7 +48,7 @@
 		@include media('<tablet') {width:100%;}
 	}
 	.text-box {
-		font: bold  25px/30px 'TradeGothic';
+		font: bold 25px/30px 'TradeGothic';
 		width:41%;
 		display: flex;
 		flex-direction: column;
@@ -31,10 +65,10 @@
 			line-height:17px;
 		}
 		.text {
-			padding:24px 38px 0 46px;
+			padding:0 38px 0 46px;
 			width:100%;
-			@include media('<desktop') {padding:15px 15px 0 20px;}
-			@include media('<tablet') {padding:15px 15px 17px 20px;}
+			@include media('<desktop') {padding:0 15px 0 20px;}
+			@include media('<tablet') {padding:12px 15px 50px 20px;}
 		}
 		.h3 {
 			font-size:60px;
@@ -81,12 +115,19 @@
 		}
 		.btn-holder {
 			text-align:right;
-			@include media('<tablet') {margin:-6px 6px 0 0;}
+			@include media('<phone') {margin:0 6px 0 0;}
 		}
+	}
+	.owl-dots {
+		width:41%;
+		position:absolute;
+		right:0;
+		bottom:0;
 	}
 	img {
 		width:100%;
 		vertical-align:top;
+		-webkit-transform-style: inherit !important;
 	}
 	p {margin:0;}
 }

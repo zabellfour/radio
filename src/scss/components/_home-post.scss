@@ -3,13 +3,13 @@
 .top-post-home {
 	font: 14px/20px 'Arial';
 	color: #545454;
-	margin:0 0 10px;
+	margin:0 0 15px;
 	@include media('<tablet') {
 		font-size:12px;
 		line-height:17px;
 	}
 	.h4 {
-		font: bold  40px/42px 'TradeGothic';
+		font: bold 40px/42px 'TradeGothic';
 		margin:0 0 2px;
 		color: $blue;
 		@include media('<desktop') {
@@ -22,20 +22,26 @@
 			margin:0 0 5px;
 		}
 	}
+	.h5 {
+		font: bold 14px/20px 'Arial';
+		text-transform:uppercase;
+		color:$blue;
+		margin:0 0 14px;
+	}
 	.img-box {
 		position:relative;
 	}
 	.block-info {
 		position:absolute;
 		right:18px;
-		bottom:10px;
+		bottom:31px;
 	}
 	img {
 		width:100%;
 		vertical-align:top;
 	}
 	p {
-		margin:0 0 17px;
+		margin:0 0 8px;
 		@include media('<tablet') {margin:0 0 11px;}
 	}
 }
@@ -69,7 +75,7 @@
 
 .three-column {
 	color: #545454;
-	margin:0 0 20px;
+	margin:0 0 44px;
 	font-size:22px;
 	line-height:25px;
 	font-weight:bold;
@@ -84,7 +90,7 @@
 	.box {
 		width:32.5%;
 		background: $gray-light;
-		padding:10px;
+		padding:12px 10px;
 		@include media('<desktop') {
 			width:49%;
 			margin:0 0 10px;

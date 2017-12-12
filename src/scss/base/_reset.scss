@@ -15,6 +15,18 @@ body {
   background: $base-background-color;
   font: #{$base-font-size}/#{$base-line-height} $base-font-family;
   min-width: $base-min-width;
+  position:relative;
+  &:after {
+    @include animate(background-color);
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    pointer-events: none;
+  }
 }
 
 // adaptive images
@@ -28,7 +40,7 @@ img {
 
 // hide tel links on desktop
 @media only screen and (min-width:1025px) {
-    a[href^=tel],a[href^=skype], a[href^=sms] {
+  a[href^=tel],a[href^=skype], a[href^=sms] {
     cursor:default;
     pointer-events:none;
   }
