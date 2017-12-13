@@ -1,0 +1,29 @@
+/* forms style */
+
+.arhive-form {
+	padding:20px 40px;
+	background:#f6f6f6;
+	margin:0 0 40px;
+	form {
+		display:flex;
+		justify-content: space-between;
+	}
+	.form-control {
+		width:35%;
+		border:3px solid #cdcdcd;
+		height:34px;
+		background: $white;
+		box-shadow:none;
+		font:14px/34px 'Arial';
+		color:#cdcdcd;
+		@include placeholder {
+			color:#cdcdcd;
+		}
+	}
+	.btn-group.bootstrap-select {
+		width:35%;
+	}
+	input[type='submit'] {
+		border-radius:50px;
+	}
+}

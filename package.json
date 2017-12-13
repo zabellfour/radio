@@ -65,11 +65,12 @@
     "start": "gulp"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-select": "^1.12.4",
     "include-media": "~1.4.9",
     "jquery": "~2.2.4",
     "jquery-match-height": "^0.7.2",
     "normalize.css": "~5.0.0",
-    "bootstrap": "^3.3.7",
     "owl.carousel": "^2.2.0"
   }
 }

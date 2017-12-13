@@ -91,28 +91,6 @@
 			}
 		}
 		.info {text-transform:uppercase;}
-		.btn {
-			@include animate(color background);
-			font: 16px/1 'TradeGothic';
-			border-radius:50px;
-			background:$red;
-			text-transform:uppercase;
-			color:$white;
-			padding:4px 9px;
-			border:2px solid $red;
-			box-shadow:none;
-			min-width: 112px;
-			letter-spacing: 1px;
-			@include media('<tablet') {
-				font-size:9px;
-				padding: 3px 9px;
-				min-width: 73px;
-			}
-			&:hover {
-				color: $red;
-				background: $white;
-			}
-		}
 		.btn-holder {
 			text-align:right;
 			@include media('<phone') {margin:0 6px 0 0;}

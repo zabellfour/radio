@@ -1,0 +1,27 @@
+doctype html
+html(lang='fr')
+  include ../partials/head
+  body
+    include ../partials/header
+    // contain main informative part of the site
+    main#main
+        .container
+            .content-holder
+                // content of the page
+                .content
+                    include ../partials/breadcrumb
+                    .intro-text
+                        h3.h3 Archives
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .arhive-form
+                        form(action='#')
+                            input.form-control(type='text', placeholder='Mot clé, nom...' name='name')
+                            select.selectpicker
+                                option Sélectionner un thème1
+                                option Sélectionner un thème2
+                                option Sélectionner un thème3
+                                option Sélectionner un thème4
+                            input.btn-primary(type='submit', value='rechercher')
+                    include ../partials/arhive-post
+                include ../partials/sidebar
+    include ../partials/foot

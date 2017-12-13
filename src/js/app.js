@@ -10,6 +10,9 @@ import sliderPrograms from './modules/sliders/sliderPrograms';
 import sliderPlaylist from './modules/sliders/sliderPlaylist';
 import sliderBaner from './modules/sliders/sliderBaner';
 
+//Forms
+import customSelect from './modules/customSelect';
+
 (($) => {
     'use strict';
     // When DOM is ready
@@ -19,6 +22,8 @@ import sliderBaner from './modules/sliders/sliderBaner';
         sliderPrograms.init();
         sliderPlaylist.init();
         sliderBaner.init();
+        //Forms
+        customSelect.init();
     });
 
 

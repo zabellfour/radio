@@ -78,3 +78,24 @@
 		text-transform:none;
 	}
 }
+
+/* arhive post style */
+
+.arhive-post {
+	.row {
+		display:flex;
+		justify-content: space-between;
+	}
+	.img-box {
+		width:30%;
+	}
+	.text-box {
+		width:70%;
+	}
+	.h4 {
+		font: bold 25px/27px 'TradeGothic';
+		text-transform:uppercase;
+		margin:0 0 10px;
+		color:$red;
+	}
+}
