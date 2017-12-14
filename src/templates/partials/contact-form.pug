@@ -1,0 +1,31 @@
+// contact form of the page
+.contact-form
+    form(action='#')
+        .row
+            .box
+                label Nom
+                    span *
+                input.form-control(type='text', placeholder='' name='name')
+            .box
+                label e-mail
+                    span *
+                input.form-control(type='text', placeholder='' name='name')
+        .row
+            .box
+                label objet
+                    span *
+                select.selectpicker
+                    option Service Pub
+                    option Service Pub1
+                    option Service Pub3
+                    option Service Pub4
+        .row
+            .box
+                label message 
+                    span *
+                textarea
+        .row
+            .box
+                span.info * Champs obligatoires
+            .box
+                input.btn-primary(type='submit', value='envoyer')

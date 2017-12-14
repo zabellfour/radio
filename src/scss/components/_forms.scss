@@ -1,29 +1,119 @@
 /* forms style */
 
 .arhive-form {
-	padding:20px 40px;
+	padding:22px 32px 22px 40px;
 	background:#f6f6f6;
-	margin:0 0 40px;
+	margin:0 0 44px;
+	@include media('<widescreen') {
+		padding:20px 10px;
+	}
+	@include media('<desktop') {
+		padding:20px 5px;
+	}
 	form {
 		display:flex;
 		justify-content: space-between;
+		align-items: center;
+		flex-wrap:wrap;
+		@include media('<desktop') {
+			justify-content: center;
+		}
 	}
 	.form-control {
-		width:35%;
-		border:3px solid #cdcdcd;
-		height:34px;
-		background: $white;
-		box-shadow:none;
-		font:14px/34px 'Arial';
-		color:#cdcdcd;
-		@include placeholder {
-			color:#cdcdcd;
+		width:42%;
+		@include media('<desktop') {
+			width:47%;
+			margin:0 10px 10px;
+			padding:0 10px;
+		}
+		@include media('<tablet') {
+			width:100%;
 		}
 	}
 	.btn-group.bootstrap-select {
-		width:35%;
+		width:34% !important;
+		@include media('<desktop') {
+			width:47% !important;
+			margin:0 0 10px;
+		}
+		@include media('<tablet') {
+			width:100% !important;
+			margin:0 10px 10px;
+		}
 	}
 	input[type='submit'] {
 		border-radius:50px;
+		min-width:135px;
+		@include media('<tablet') {
+			font-size: 14px;
+			padding: 6px 9px;
+		}
+	}
+}
+
+/* conatct-form style */
+
+.contact-form {
+	background:#f6f6f6;
+	padding:45px 50px 66px;
+	margin:0 0 20px;
+	@include media('<tablet') {
+		padding:35px 10px;
+	}
+	.row {
+		display:flex;
+		justify-content: space-between;
+		margin:0 0 22px;
+		&:last-child {margin:-10px 0 0;}
+		@include media('<phone') {
+			display:block;
+			margin:0 0 10px;
+		}
+	}
+	.box {
+		width:48%;
+		@include media('<phone') {
+			width:100%;
+			margin:0 0 10px;
+		}
+		&:only-child {width:100%;}
+	}
+	.form-control {
+		width:100%;
+	}
+	.btn-group.bootstrap-select {
+		width:100% !important;
+	}
+	.info {
+		font: 14px/16px 'Arial';
+		color:#dd1424;
+	}
+	.btn-primary {
+		float:right;
+		border-radius:50px;
+	}
+	.bootstrap-select > .dropdown-toggle {
+		padding:0 35px 0 17px;
+		text-transform:uppercase;
+		@include media('<tablet') {
+			padding:0 35px 0 10px;
+		}
+	}
+	.bootstrap-select.btn-group {
+		.dropdown-menu li a {
+			padding:0 17px;
+			@include media('<tablet') {
+				padding:0 10px;
+			}
+		}
+	}
+	label {
+		display:block;
+		margin:0 0 4px;
+	}
+	textarea {
+		width:100%;
+		resize:none;
+		height:260px;
 	}
 }

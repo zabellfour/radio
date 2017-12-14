@@ -18,16 +18,19 @@ textarea {
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 	box-sizing: border-box;
-	border: 1px solid $form-element-border-color;
-	padding: $form-element-padding;
-
-	&:focus {
-		outline:none;
+	padding:0 18px;
+	border:2px solid #cdcdcd;
+	height:40px;
+	background: $white;
+	box-shadow:none;
+	font:14px/42px 'Arial';
+	color:#cdcdcd;
+	@include media('<tablet') {
+		padding:0 10px;
+		height:35px;
 	}
-
-	@include placeholder {
-		color: $placeholder-color;
-	}
+	@include placeholder {color:#cdcdcd;}
+	&:focus {outline:none;}
 }
 
 select {
@@ -49,17 +52,32 @@ input[type='submit'] {
 	cursor: pointer;
 }
 
+label {
+	font:bold 20px/22px 'TradeGothic';
+	text-transform:uppercase;
+	color:#000;
+	@include media('<tablet') {
+		font-size:16px;
+		line-height:18px;
+	}
+	>span {color:$red;}
+}
+
 /* custom select style */
 
 .bootstrap-select {
 	position:relative;
 	>.dropdown-toggle {
-		border:3px solid #cdcdcd;
+		border:2px solid #cdcdcd;
 		background: $white;
 		box-shadow:none;
-		font:14px/26px 'Arial';
+		font:14px/36px 'Arial';
 		color:#cdcdcd;
 		text-align:left;
+		padding: 0 35px 0 22px;
+		@include media('<desktop') {
+			padding:0 35px 0 10px;
+		}
 		>span {
 			display:inline !important;
 		}
@@ -74,16 +92,19 @@ input[type='submit'] {
 		float: left;
 		min-width: 160px;
 		padding: 5px 0;
-		margin: -3px 0 0;
+		margin: -2px 0 0;
 		list-style: none;
 		font:14px/26px 'Arial';
 		background-color: #fff;
-		border:3px solid #cdcdcd;
+		border:2px solid #cdcdcd;
 		background-clip: padding-box;
 	}
 	.dropdown-menu li a {
 		display:block;
-		padding:0 5px;
+		padding:0 20px;
+		@include media('<tablet') {
+			padding:0 10px;
+		}
 	}
 	.btn-default.dropdown-toggle {
 		&:focus {
@@ -102,6 +123,9 @@ input[type='submit'] {
 			border-color: #cdcdcd;
 		}
 	}
+	&.open {
+		.bs-caret {transform: rotate(90deg);}
+	}
 	.dropdown-menu {
 		>li {
 			a {
@@ -110,8 +134,18 @@ input[type='submit'] {
 					outline: none;
 					color: #cdcdcd;
 				}
+				&:hover {color:#cdcdcd;}
 			}
 		}
+	}
+	.bs-caret {
+		@extend [class^="icon-"];
+		@extend .icon-arrow-left;
+		@include animate (transform);
+		position:absolute;
+		right: 19px;
+		top: 13px;
+		transform: rotate(-90deg);
 	}
 }
 .open>.dropdown-menu {
