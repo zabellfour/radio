@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Starter Kit</title>
+    <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+    <link media="all" rel="stylesheet" href="assets/css/style.min.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="menu-holder">
+        <div class="header-center">
+          <div class="header-center-top">
+            <div class="container">
+              <div class="header-center-top-wrapper">
+                <div class="mob-menu">
+                  <button class="menu-opener">
+                    <div class="burger-holder"><span></span><span></span><span></span></div><span class="text">MENU</span>
+                  </button>
+                </div><a class="logo" href="#"><img src="assets/images/logo-color.png" alt="RRB"></a>
+                <div class="hero-holder">
+                  <div class="name-holder"><span class="descr">à l’antenne</span><strong class="name">jeudi hippique</strong></div><img src="assets/images/header-hero.png" alt="jeudi hippique">
+                </div>
+                <div class="apps-box">
+                  <div class="player">
+                    <div class="play-info"><span class="top-title">Player</span><span class="main-title">écoutez le direct</span>
+                      <div class="progress"><span class="remaining" style="width:70%;"></span></div>
+                      <div class="bottom-info"><span class="track-info">Space oddity</span><span class="author">DAVID BOWIE</span></div>
+                    </div>
+                    <button class="play-button"> <i class="icon-play"></i></button>
+                  </div>
+                  <div class="weather-holder"><img src="assets/images/weather-widget.png" alt="weather widget"></div>
+                  <div class="clock-holder"><img src="assets/images/clock.png" alt="clock"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-center-bottom">
+            <div class="container">
+              <div class="owl-carousel owl-theme program-slider">
+                <div class="slide now-playing">
+                  <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide"> 
+                  <time class="time" datetime="2017-05-15 8:00">8h00</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide"> 
+                  <time class="time" datetime="2017-05-15 9:00">9h00</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide"> 
+                  <time class="time" datetime="2017-05-15 10:00">10h00</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide"> 
+                  <time class="time" datetime="2017-05-15 11:30">11h30</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide"> 
+                  <time class="time" datetime="2017-05-15 12:30">12h30</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="mob-wrapper">
+            <div class="header-top"><a class="logo-full" href="#"><img src="assets/images/logo-full.png" alt="Radio Rythme Blev"></a>
+              <ul class="nav-list">
+                <li><a href="#"><i class="icon-radio"></i><strong class="link-text">écouter</strong></a></li>
+                <li><a href="#"><i class="icon-tv"></i><strong class="link-text">regarder</strong></a></li>
+                <li><a href="#"><i class="icon-podcast"></i><strong class="link-text">podcasts</strong></a></li>
+                <li><a href="#"><i class="icon-frequence"></i><strong class="link-text">fréquences</strong></a></li>
+              </ul>
+              <form class="search-form" action="#">
+                <input type="text" placeholder="Rechercher">
+                <button type="submit"><i class="icon-search">                                                                                   </i></button>
+              </form>
+            </div>
+            <div class="panel-top">
+              <div class="nav-top-holder">
+                <nav><a href="#">Actualités</a><a href="#">Programmes</a><a href="#">Vidéos</a><a href="#">RRB</a><a href="#">Jeux<span class="info-box"><span class="info1">25 00 00*</span><span class="info2">standard jeux</span></span></a></nav>
+              </div>
+              <div class="login-holder">
+                <div class="logo"><span class="text1">Club RRB</span><a class="text2" href="#" target="_blank">Je m‘inscris</a></div>
+                <div class="login-form">
+                  <form action="#">
+                    <div class="row-input">
+                      <input class="form-control" type="text" placeholder="Identifiant" name="name">
+                    </div>
+                    <div class="row-input">
+                      <input class="form-control form-control-btn" type="password" placeholder="Mot de passe" name="name">
+                      <button class="btn" type="submit">OK </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- contain main informative part of the site-->
+    <main id="main">
+      <div class="container">
+        <div class="content-holder">
+          <!-- content of the page-->
+          <div class="content">
+            <!-- breadcrumb of the page-->
+            <div class="breadcrumb-wrap">
+              <ul class="breadcrumb">
+                <li>Accueil</li>
+                <li>RRB</li>
+                <li>Équipe</li>
+                <li>Animateurs</li>
+              </ul>
+            </div>
+            <h3 class="h3">Notre grille</h3>
+            <!-- nav panel of the page-->
+            <div class="nav-panel">
+              <ul class="navbar-list">
+                <li class="is-active"><a href="#" target="_blank">en semaine</a></li>
+                <li><a href="#" target="_blank">samedi</a></li>
+                <li><a href="#" target="_blank">dimanche</a></li>
+                <li><a href="#" target="_blank">types</a></li>
+              </ul>
+              <ul class="navbar-info">
+                <li class="is-active"><a href="#" target="_blank">L‘information</a></li>
+                <li><a href="#" target="_blank">Europe sur RRB</a></li>
+                <li><a href="#" target="_blank">La musique</a></li>
+                <li><a href="#" target="_blank">Les rubriques</a></li>
+                <li><a href="#" target="_blank">Les services</a></li>
+              </ul>
+            </div>
+            <!-- post of the page-->
+            <div class="posts-arhive no-time">
+              <div class="row">
+                <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
+                <div class="text">
+                  <h3 class="h3">LIONEL SABOT ROBERT CANAL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.</p>
+                  <time class="time">Le vendredi à 17h00 et le samedi à 11h00</time>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
+                <div class="text">
+                  <h3 class="h3">LIONEL SABOT ROBERT CANAL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.</p>
+                  <time class="time">Le vendredi à 17h00 et le samedi à 11h00</time>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
+                <div class="text">
+                  <h3 class="h3">LIONEL SABOT ROBERT CANAL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.</p>
+                  <time class="time">Le vendredi à 17h00 et le samedi à 11h00</time>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
+                <div class="text">
+                  <h3 class="h3">LIONEL SABOT ROBERT CANAL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.</p>
+                  <time class="time">Le vendredi à 17h00 et le samedi à 11h00</time>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
+                <div class="text">
+                  <h3 class="h3">LIONEL SABOT ROBERT CANAL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.</p>
+                  <time class="time">Le vendredi à 17h00 et le samedi à 11h00</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar of the page-->
+          <div class="sidebar">
+            <!-- Ad panes of the page-->
+            <div class="img-ad"><img src="assets/images/image-sidebar01.jpg" alt="image description"></div>
+            <!-- Facebook widget of the page--><a class="facebook-link" href="#"><span>Rejoignez-nous sur<strong>Facebook</strong></span>
+              <div class="img"><img src="assets/images/facebook-icon.png" alt="image description"></div></a>
+            <!-- Facebook widget of the page-->
+            <div class="sidebar-list">
+              <h4 class="h4">boîte à outils</h4>
+              <div class="block">
+                <div class="row"><span>Donnez votre avis</span>
+                  <div class="img"><img src="assets/images/sidebar-icon01.png" alt="image description"></div>
+                </div>
+                <div class="row"><span>posez vos questions</span>
+                  <div class="img"><img src="assets/images/sidebar-icon02.png" alt="image description"></div>
+                </div>
+                <div class="row"><span>réagissez en direct</span>
+                  <div class="img"><img src="assets/images/sidebar-icon03.png" alt="image description"></div>
+                </div>
+                <div class="row"><span>Vous avez une idée</span>
+                  <div class="img"><img src="assets/images/sidebar-icon04.png" alt="image description"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab panes of the page-->
+            <div class="tab-sidebar">
+              <h4 class="h4">vos émissions</h4>
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#tab1" data-toggle="tab">les + écoutées</a></li>
+                <li><a href="#tab2" data-toggle="tab">les + vues</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">1</span><span class="info">240</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">28 juillet 2017</span><a class="link" href="#">Duis commodo elit sed nisi molestie</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">2</span><span class="info">270</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">28 juillet 2017</span><a class="link" href="#">Duis commodo elit sed nisi molestie</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">3</span><span class="info">220</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">28 juillet 2017</span><a class="link" href="#">Duis commodo elit sed nisi molestie</a></div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">1</span><span class="info">240</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">20 juillet 2017</span><a class="link" href="#">Duis elit sed nisi molestie commodo</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">2</span><span class="info">20</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">10 juillet 2017</span><a class="link" href="#">Duis nisicom modo elit sed  molestie</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">3</span><span class="info">150</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">18 juillet 2017</span><a class="link" href="#">Duis comed nisi molestie modo elit s</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Banner list of the page-->
+            <div class="baners-sidebar">
+              <div class="row"><span class="text"> <span class="text1">Bientôt...</span>CARTE CHANCE</span>
+                <ul class="icon-list">
+                  <li><img src="assets/images/sidebar-icon05.png" alt="image description"></li>
+                  <li><img src="assets/images/sidebar-icon06.png" alt="image description"></li>
+                  <li><img src="assets/images/sidebar-icon07.png" alt="image description"></li>
+                </ul>
+              </div>
+              <div class="row"><span class="text"><span class="text2">envoyez </span>CHANCE Votre prénom  au 3146*</span></div>
+            </div>
+            <!-- Ad panes of the page-->
+            <div class="img-ad"><img src="assets/images/image-sidebar02.jpg" alt="image description"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer">
+      <div class="container">
+        <div class="col-wrapper">
+          <div class="col"><strong class="title">Twitter Widget</strong>
+            <div class="twitter-holder"><img src="assets/images/twitter-placeholder.png" alt="widget"></div>
+            <div class="social-holder"><strong class="title">social widget</strong>
+              <ul class="social-net-share">
+                <li class="social-facebook"><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                <li class="social-twitter"><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+                <li class="social-vk"><a href="#" target="_blank"><i class="icon-vk"></i></a></li>
+                <li class="social-pinterest"><a href="#" target="_blank"><i class="icon-pinterest"></i></a></li>
+                <li class="social-tumblr"><a href="#" target="_blank"><i class="icon-tumblr"></i></a></li>
+                <li class="social-dribbble"><a href="#" target="_blank"><i class="icon-dribbble"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col"><strong class="title">instagram</strong>
+            <ul class="inst-img-list">
+              <li><a href="#" target="_blank"><img src="assets/images/inst-img1.jpg" alt="instagram image"></a></li>
+              <li><a href="#" target="_blank"><img src="assets/images/inst-img2.jpg" alt="instagram image"></a></li>
+              <li><a href="#" target="_blank"><img src="assets/images/inst-img3.jpg" alt="instagram image"></a></li>
+              <li><a href="#" target="_blank"><img src="assets/images/inst-img4.jpg" alt="instagram image"></a></li>
+              <li><a href="#" target="_blank"><img src="assets/images/inst-img5.jpg" alt="instagram image"></a></li>
+              <li><a href="#" target="_blank"><img src="assets/images/inst-img6.jpg" alt="instagram image"></a></li>
+            </ul>
+          </div>
+          <div class="col"><strong class="title">news letter</strong>
+            <div class="contact-form">
+              <form action="#">
+                <input type="text" required placeholder="Nom">
+                <input type="email" required placeholder="Adresse mail">
+                <textarea cols="30" rows="10" required placeholder="Message"></textarea>
+                <button type="submit">Inscription</button>
+              </form>
+            </div>
+          </div>
+          <div class="col"><a href="#"><img src="assets/images/logo-lg.svg" alt="RRB" width="309" height="168"></a></div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/vendor.min.js" defer=""></script>
+    <script src="assets/js/app.js" defer=""></script>
+  </body>
+</html>
