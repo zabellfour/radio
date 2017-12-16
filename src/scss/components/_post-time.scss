@@ -1,6 +1,12 @@
 /* post time style */
 .posts-arhive {
 	padding:29px 0 47px;
+	&.no-time {
+		.row {
+			margin:0 0 50px;
+			@include media('<tablet') {margin:0 0 25px;}
+		}
+	}
 	.row {
 		display:flex;
 		overflow:hidden;
@@ -15,6 +21,10 @@
 			min-width:50px;
 			max-width:50px;
 		}
+		@include media('<phone') {
+			min-width:100%;
+			max-width:100%;
+		}
 		&:before {
 			content: '';
 			position:absolute;
@@ -24,6 +34,7 @@
 			width:1px;
 			background:#e0e0e0;
 			@include media('<desktop') {left:22px;}
+			@include media('<phone') {display:none;}
 		}
 		time {
 			font: 18px/1 $base-font-arial;
@@ -34,6 +45,7 @@
 			display:block;
 			margin:23px 0 0;
 			@include media('<desktop') {font-size:12px;}
+			@include media('<phone') {margin:0 0 10px;}
 		}
 	}
 	.img {
@@ -44,17 +56,16 @@
 			max-width:150px;
 		}
 		@include media('<phone') {
-			min-width:calc(100% - 50px);
-			max-width:calc(100% - 50px);
+			min-width:100%;
+			max-width:100%;
+			margin:0 0 10px;
 		}
 	}
 	.text {
 		font: 13px/20px $base-font-arial;
 		flex:auto;
 		padding:0 0 0 20px;
-		@include media('<phone') {
-			padding:20px 0 0 49px;
-		}
+		@include media('<phone') {padding:0;}
 	}
 	.h3 {
 		font: bold 25px/27px $base-font-sans-serif;
@@ -71,6 +82,10 @@
 		color:$black;
 		display:block;
 		margin:0 0 6px;
+		@include media('<tablet') {
+			font-size:14px;
+			line-height:16px;
+		}
 	}
 	.link {
 		@include animate(opacity);
