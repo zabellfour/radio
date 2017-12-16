@@ -25,10 +25,20 @@ var common = {
                 $formEl.removeClass('opened');
                 $logoEl.removeClass('hide');
             }
+            if (window.innerWidth < 768) {
+                subMenuOpen();
+            }
+            if (window.innerWidth > 767) {
+                $body.removeClass('open-menu');
+            }
         });
-        $('.mh-item').matchHeight({
-            byRow: false
-        });
+        function subMenuOpen(){
+            $('.has-dropdown > .drop-opener').off();
+            $('.has-dropdown > .drop-opener').on('click', function(){
+                $(this).siblings('.drop-down').slideToggle(600);
+            });
+        }
+        subMenuOpen();
     }
 
 };

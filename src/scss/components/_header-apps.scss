@@ -26,7 +26,7 @@
             height: 84px;
         }
         @include media('<tablet') {
-            height: 46px;
+            height: 48px;
             width: 104px;
             padding: 3px 3px 1px 6px;
             border-radius: 9px;
@@ -79,6 +79,8 @@
             @include media('<tablet') {
                 font-size: 11px;
                 margin-bottom: 1px;
+padding-top: 3px;
+margin-bottom: 0;
             }
         }
         .progress {
@@ -139,6 +141,7 @@
                 overflow: hidden;
                 letter-spacing: 1px;
                 font-family: $base-font-myriad;
+
                 @include media('<widescreen') {
                     font-size: 11px;
                 }
@@ -148,6 +151,7 @@
                 }
                 @include media('<tablet') {
                     font-size: 6px;
+                    padding-top: 1px;
                 }
             }
             .author {
@@ -162,6 +166,7 @@
                 }
                 @include media('<tablet') {
                     font-size: 10px;
+                    padding-top:1px;
                 }
             }
         }
@@ -234,13 +239,13 @@
         width: 129px;
         height: 129px;
         flex-shrink: 0;
-        @include media('<1500px') {
+        @include media('<1550px') {
             width: 90px;
             height: 90px;
             top: 33px;
             left: calc(100% + 33px);
         }
-        @include media('<1400px') {
+        @include media('<1450px') {
             display: none;
         }
         @include media('<tablet') {

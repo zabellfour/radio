@@ -1,62 +1,96 @@
 #footer
-    .container
-        .col-wrapper
-            .col
-                strong.title Twitter Widget
-                .twitter-holder
-                    img(src="assets/images/twitter-placeholder.png", alt="widget")
-                .social-holder
-                    strong.title social widget
-                    ul.social-net-share
-                        li.social-facebook
-                            a(href="#" target="_blank")
-                                i.icon-facebook
-                        li.social-twitter
-                            a(href="#" target="_blank")
-                                i.icon-twitter
-                        li.social-vk
-                            a(href="#" target="_blank")
-                                i.icon-vk
-                        li.social-pinterest
-                            a(href="#" target="_blank")
-                                i.icon-pinterest
-                        li.social-tumblr
-                            a(href="#" target="_blank")
-                                i.icon-tumblr
-                        li.social-dribbble
-                            a(href="#" target="_blank")
-                                i.icon-dribbble
-            .col
-                strong.title instagram
-                ul.inst-img-list
-                    li
-                        a(href="#" target="_blank")
-                            img(src="assets/images/inst-img1.jpg", alt="instagram image")
-                    li
-                        a(href="#" target="_blank")
-                            img(src="assets/images/inst-img2.jpg", alt="instagram image")
-                    li
-                        a(href="#" target="_blank")
-                            img(src="assets/images/inst-img3.jpg", alt="instagram image")
-                    li
-                        a(href="#" target="_blank")
-                            img(src="assets/images/inst-img4.jpg", alt="instagram image")
-                    li
-                        a(href="#" target="_blank")
-                            img(src="assets/images/inst-img5.jpg", alt="instagram image")
-                    li
-                        a(href="#" target="_blank")
-                            img(src="assets/images/inst-img6.jpg", alt="instagram image")
-            .col
-                strong.title news letter
-                .contact-form
-                    form(action="#")
-                        input(type="text" required placeholder="Nom")
-                        input(type="email" required placeholder="Adresse mail")
-                        textarea( cols="30", rows="10" required placeholder="Message")
-                        button(type="submit") Inscription
-            .col
-                a(href="#")
-                    img(src="assets/images/logo-lg.svg", alt="RRB" width="309" height="168")
+	.container
+		.col-wrapper
+			.col.twitter-col
+				strong.title Twitter Widget
+				.twitter-holder
+					.post-holder
+						.message-row
+							p @PASCO, Duis commodo elit sed nisi molestie
+						.action-row 
+							span.text 2 hours ago
+							a(href="#" target="_blank") Reply
+							a(href="#" target="_blank") Retweet
+							a(href="#" target="_blank") Favorite
+					.post-holder
+						.message-row
+							p @PASCO, Duis commodo elit sed nisi molestie
+						.action-row 
+							span.text 2 hours ago
+							a(href="#" target="_blank") Reply
+							a(href="#" target="_blank") Retweet
+							a(href="#" target="_blank") Favorite
+					.post-holder
+						.message-row
+							p @PASCO, Duis commodo elit sed nisi molestie
+						.action-row 
+							span.text 2 hours ago
+							a(href="#" target="_blank") Reply
+							a(href="#" target="_blank") Retweet
+							a(href="#" target="_blank") Favorite
+			.col.news-col
+				strong.title news letter
+				.row
+					.news-form
+						form(action="#")
+							.input-chk-row
+								label(for="tmp1").chk-custom
+									input(type="checkbox" checked id='tmp1')
+									span.fake-chk
+									span.text Theme 1
+								label(for="tmp2").chk-custom
+									input(type="checkbox" checked id='tmp2')
+									span.fake-chk
+									span.text Theme 2
+							.input-chk-row
+								label(for="tmp3").chk-custom
+									input(type="checkbox" id='tmp3')
+									span.fake-chk
+									span.text Theme 3
+								label(for="tmp4").chk-custom
+									input(type="checkbox" id='tmp4')
+									span.fake-chk
+									span.text Theme 4
+							.input-row
+								input(type="email" placeholder="Adresse mail" required="true  ")
+							.input-row
+								button(type="submit") Incrioption
+				.row
+					.social-holder
+						strong.title social widget
+						ul.social-net-share
+							li.social-facebook
+								a(href="#" target="_blank")
+									i.icon-facebook
+							li.social-twitter
+								a(href="#" target="_blank")
+									i.icon-twitter
+							li.social-google
+								a(href="#" target="_blank")
+									i.icon-google
+							li.social-youtube
+								a(href="#" target="_blank")
+									i.icon-youtube
+			.col.info-col
+				.text-col
+					a(href="#").logo
+							img(src="assets/images/logo-lg.svg", alt="RRB" width="175" height="95")
+					h5.h5 Radio Rythme Bleu
+					address 8 avenue Maréchal Foch NOUMÉA		
+					dl.contact-info
+						dt Standard 
+						dd 
+							a(href="tel:254646") 25 46 46 
+						dt Rédaction  
+						dd 
+							a(href="tel:254500") 25 45 00
+						dt Fax 
+						dd 28 49 28
+						dt E-mail 
+						dd 
+							a(href="mailto:&#114;&#114;&#098;&#064;&#108;&#097;&#103;&#111;&#111;&#110;&#046;&#110;&#099;") &#114;&#114;&#098;&#064;&#108;&#097;&#103;&#111;&#111;&#110;&#046;&#110;&#099;
+			.col.map-col
+				#mapid(data-latitude="-22,278773" data-longtitude="166,443193" data-zoom="17")
+			
 script(src='assets/js/vendor.min.js', defer='')
 script(src='assets/js/app.js', defer='')

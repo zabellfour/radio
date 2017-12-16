@@ -13,6 +13,9 @@ import sliderBaner from './modules/sliders/sliderBaner';
 //Forms
 import customSelect from './modules/customSelect';
 
+//maps 
+import map from './modules/map';
+
 (($) => {
     'use strict';
     // When DOM is ready
@@ -24,6 +27,9 @@ import customSelect from './modules/customSelect';
         sliderBaner.init();
         //Forms
         customSelect.init();
+        map.init();
+     
+
     });
 
 

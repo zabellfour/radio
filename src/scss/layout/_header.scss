@@ -1,8 +1,8 @@
 #header {
-    overflow: hidden;
     position: relative;
     padding-top: 42px;
     margin-bottom: 10px;
+    z-index: 20;
     @include media('<desktop') {
         padding-top: 36px;
     }
@@ -68,7 +68,7 @@
             }
         }
         a {
-            @include animate(opacity);
+            @include animate(color);
             display: inline-block;
             padding: 5px 23px 5px 23px;
             border-left: 1px solid #bdbdf2;
@@ -93,7 +93,7 @@
                 font-size: 18px;
             }
             &:hover {
-                opacity: .85;
+                color: $red;
             }
             i {
                 font-size: 28px;
@@ -268,7 +268,7 @@
             padding-top: 20px;
             @include animate(opacity);
             @include media('<1270px') {
-                margin-right: 50px;
+                margin-right: 39px;
             }
             @include media('<widescreen') {
                 width: 180px;
