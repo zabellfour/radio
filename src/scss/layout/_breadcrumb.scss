@@ -3,6 +3,7 @@ $breadcrumb-color: #777272;
 
 .breadcrumb-wrap {
 	margin:0 0 27px;
+	@include media('<tablet') {margin:0 0 15px;}
 	.breadcrumb {
 		@extend %listreset;
 		display: flex;

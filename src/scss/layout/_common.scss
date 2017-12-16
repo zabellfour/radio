@@ -59,5 +59,9 @@
             font-size:30px;
             line-height:32px;
         }
+        @include media('<phone') {
+            font-size:25px;
+            line-height:27px;
+        }
     }
 }
