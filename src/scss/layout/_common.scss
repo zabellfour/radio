@@ -10,6 +10,19 @@
     overflow: hidden;
 }
 
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition-timing-function: ease;
+  transition-duration: .35s;
+  transition-property: height, visibility;
+}
+.collapse {
+  display:none;
+  &.in {display:block;}
+}
+
 .content-holder {
     display: flex;
     justify-content: space-between;

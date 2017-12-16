@@ -1,0 +1,21 @@
+// post of the page
+.acccordion-panel
+    .panel-group#accordion(role="tablist" aria-multiselectable="true")
+        .panel.panel-default
+            .panel-heading.active#headingOne(role="tab")
+                a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne") MATIN
+                    i.icon-arrow-left
+            #collapseOne.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingOne")
+                     include ../partials/post-time
+        .panel.panel-default
+            .panel-heading#headingTwo(role="tab")
+                a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") APRÈS-MIDI
+                    i.icon-arrow-left
+            #collapseTwo.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingTwo")
+                    include ../partials/post-time
+        .panel.panel-default
+            .panel-heading#headingThree(role="tab")
+                a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseTwo") APRÈS-MIDI
+                    i.icon-arrow-left
+            #collapseThree.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingThree")
+                    include ../partials/post-time

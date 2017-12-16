@@ -4,6 +4,7 @@
 // Feel free with using ES6 here.
 
 import common from './modules/common';
+import accordionActive from './modules/accordionActive';
 
 //Sliders
 import sliderPrograms from './modules/sliders/sliderPrograms';
@@ -18,6 +19,7 @@ import customSelect from './modules/customSelect';
     // When DOM is ready
     $(() => {
         common.mobMenu();
+        accordionActive.init();
         // Sliders init
         sliderPrograms.init();
         sliderPlaylist.init();
