@@ -1,12 +1,22 @@
 /* accordion panel style */
 
 .acccordion-panel {
-	margin:0 0 60px;
+	margin:0 0 49px;
+	@include media('<tablet') {margin:0 0 20px;}
 	.panel-heading {
+		text-transform:uppercase;
 		padding:10px 0;
-		font: bold 30px/32px 'TradeGothic';
+		font: bold 30px/32px $base-font-sans-serif;
 		border-bottom:2px solid #f2f2f2;
 		position:relative;
+		@include media('<desktop') {
+			font-size:24px;
+			line-height:26px;
+		}
+		@include media('<tablet') {
+			font-size:20px;
+			line-height:22px;
+		}
 		&.active {
 			.icon-arrow-left {transform: rotate(90deg);}
 		}
@@ -19,6 +29,7 @@
 			position:absolute;
 			right:0;
 			top:15px;
+			@include media('<tablet') {top:6px;}
 		}
 		a {
 			display:block;

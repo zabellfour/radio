@@ -9,10 +9,28 @@ $navbar-active-bg: #f2f2f2;
 
 .navbar-list {
 	@extend %listreset;
-	font: bold 21px/1 'TradeGothic';
+	font: bold 21px/1 $base-font-sans-serif;
 	text-transform:uppercase;
 	display:flex;
 	flex-wrap: wrap;
+	@include media('<widescreen') {
+		font-size:17px;
+	}
+	@include media('<tablet') {
+		font-size:15px;
+	}
+	@include media('<phone') {
+		border:1px solid $navbar-active-bg;
+		border-right:none;
+	}
+	li {
+		@include media('<phone') {
+			width:50%;
+			text-align:center;
+			border-bottom:1px solid $navbar-active-bg;
+			border-right:1px solid $navbar-active-bg;
+		}
+	}
 	.is-active a {background:$navbar-active-bg;}
 	a {
 		@include animate(background);
@@ -20,19 +38,47 @@ $navbar-active-bg: #f2f2f2;
 		padding:17px 34px 13px;
 		color:$navbar-color;
 		text-decoration:none;
+		@include media('<widescreen') {
+			padding:10px 20px 10px;
+		}
 		&:hover {background:$navbar-active-bg;}
 	}
 }
 
 .navbar-info {
 	@extend %listreset;
-	font: 16px/1 'Arial';
+	font: 16px/1 $base-font-arial;
 	background: $red;
 	display:flex;
 	justify-content: center;
 	padding:9px 10px 7px;
+	text-align:center;
+	@include media('<widescreen') {
+		font-size:13px;
+	}
+	@include media('<desktop') {
+		justify-content: space-between;
+	}
+	@include media('<tablet') {
+		flex-wrap:wrap;
+		justify-content: center;
+		padding:10px 10px 0;
+	}
 	li {
 		margin:0 19px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include media('<widescreen') {
+			margin:0 10px;
+		}
+		@include media('<tablet') {
+			width:30%;
+			margin:0 5px 10px;
+		}
+		@include media('<phone') {
+			width:100%;
+		}
 	}
 	.is-active a {font-weight:bold;}
 	a {

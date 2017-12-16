@@ -3,7 +3,7 @@
 	margin:28px 0;
 	@include media('<tablet') {margin:15px 0;}
 	.panel {
-		font: bold 20px/22px 'TradeGothic';
+		font: bold 20px/22px $base-font-sans-serif;
 		display:flex;
 		margin:0 0 13px;
 		@include media('<tablet') {
@@ -49,7 +49,7 @@
 
 .frequency-list {
 	.h5 {
-		font: bold 25px/27px 'TradeGothic';
+		font: bold 25px/27px $base-font-sans-serif;
 		margin:0 0 21px;
 		@include media('<tablet') {
 			font-size:20px;
@@ -58,7 +58,7 @@
 	}
 	ul {
 		@extend %listreset;
-		font: 16px/20px 'Arial';
+		font: 16px/20px $base-font-arial;
 	}
 	li {
 		display:flex;
@@ -70,7 +70,7 @@
 		}
 	}
 	.frequency {
-		font: bold 36px/38px 'TradeGothic';
+		font: bold 36px/38px $base-font-sans-serif;
 		color:#dd1424;
 		min-width:90px;
 		max-width:90px;

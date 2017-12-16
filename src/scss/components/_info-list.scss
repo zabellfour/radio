@@ -1,0 +1,31 @@
+/* info list style */
+.information-list-box {
+	margin:0 0 35px;
+	.h3 {
+		font: bold 38px/40px $base-font-sans-serif;
+		margin:0 0 15px;
+		text-transform:uppercase;
+		@include media('<tablet') {font-size:26px;}
+	}
+}
+
+.info-list {
+	@extend %listreset;
+	font: bold 14px/16px $base-font-arial;
+	display:flex;
+	flex-wrap: wrap;
+	ul {
+		@extend %listreset;
+		li {margin:0 0 7px;}
+	}
+	>li {
+		width:23%;
+		@include media('<tablet') {width:48%;}
+	}
+	a {
+		@include animate(opacity);
+		text-transform:uppercase;
+		text-decoration:none;
+		&:hover {opacity:.8;}
+	}
+}

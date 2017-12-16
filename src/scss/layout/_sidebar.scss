@@ -102,8 +102,8 @@ $sidebar-bg: $gray-light;
 			padding:15px 15px 5px;
 		}
 		@include media('<desktop') {
-			font-size:24px;
-			line-height:26px;
+			font-size:20px;
+			line-height:21px;
 		}
 		@include media('<tablet') {
 			font-size:17px;
@@ -231,7 +231,7 @@ $sidebar-bg: $gray-light;
 		&:hover {opacity:.8;}
 	}
 	.panel {
-		font: bold 20px/1 'Arial';
+		font: bold 20px/1 $base-font-arial;
 		height:26px;
 		color:$blue;
 		position:absolute;

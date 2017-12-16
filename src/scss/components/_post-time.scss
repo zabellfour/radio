@@ -4,14 +4,17 @@
 	.row {
 		display:flex;
 		overflow:hidden;
-		&:not(:last-child) {
-			padding:0 0 23px;
-		}
+		&:not(:last-child) {padding:0 0 23px;}
+		@include media('<phone') {flex-wrap: wrap;}
 	}
 	.time-box {
 		min-width:90px;
 		max-width:90px;
 		position:relative;
+		@include media('<desktop') {
+			min-width:50px;
+			max-width:50px;
+		}
 		&:before {
 			content: '';
 			position:absolute;
@@ -20,49 +23,64 @@
 			height:9999px;
 			width:1px;
 			background:#e0e0e0;
+			@include media('<desktop') {left:22px;}
 		}
 		time {
-			font: 18px/1 'Arial';
+			font: 18px/1 $base-font-arial;
 			position: relative;
 			z-index: 1;
 			padding: 5px 4px;
 			background: #fff;
 			display:block;
 			margin:23px 0 0;
+			@include media('<desktop') {font-size:12px;}
 		}
 	}
 	.img {
 		min-width:190px;
 		max-width:190px;
+		@include media('<desktop') {
+			min-width:150px;
+			max-width:150px;
+		}
+		@include media('<phone') {
+			min-width:calc(100% - 50px);
+			max-width:calc(100% - 50px);
+		}
 	}
 	.text {
-		font: 13px/20px 'Arial';
+		font: 13px/20px $base-font-arial;
 		flex:auto;
 		padding:0 0 0 20px;
+		@include media('<phone') {
+			padding:20px 0 0 49px;
+		}
 	}
 	.h3 {
-		font: bold 25px/27px 'TradeGothic';
+		font: bold 25px/27px $base-font-sans-serif;
 		text-transform:uppercase;
 		color:$red;
 		margin:0 0 3px;
+		@include media('<desktop') {
+			font-size:20px;
+			line-height:22px;
+		}
 	}
 	.time {
-		font: bold 18px/21px 'Arial';
+		font: bold 18px/21px $base-font-arial;
 		color:$black;
 		display:block;
 		margin:0 0 6px;
 	}
 	.link {
 		@include animate(opacity);
-		font: bold 14px/16px 'Arial';
+		font: bold 14px/16px $base-font-arial;
 		text-transform:uppercase;
 		text-decoration:none;
 		color:$blue;
 		&:hover {opacity:.7;}
 	}
-	p {
-		margin:0 0 6px;
-	}
+	p {margin:0 0 6px;}
 	img {
 		width:100%;
 		vertical-align:top;
