@@ -10,6 +10,19 @@
     overflow: hidden;
 }
 
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition-timing-function: ease;
+  transition-duration: .35s;
+  transition-property: height, visibility;
+}
+.collapse {
+  display:none;
+  &.in {display:block;}
+}
+
 .content-holder {
     display: flex;
     justify-content: space-between;
@@ -28,7 +41,7 @@
     margin: 0 0 15px;
     @include media('<tablet') {margin:0 0 4px;}
     .h3 {
-        font: bold 37px/43px 'TradeGothic';
+        font: bold 37px/43px $base-font-sans-serif;
         display: inline-block;
         vertical-align: middle;
         margin: 0;
@@ -49,15 +62,19 @@
 }
 
 .intro-text {
-    font: 14px/20px 'Arial';
+    font: 14px/20px $base-font-arial;
     margin:0 0 39px;
     .h3 {
-        font: bold 40px/42px 'TradeGothic';
+        font: bold 40px/42px $base-font-sans-serif;
         color: $blue;
         margin:0 0 6px;
         @include media('<tablet') {
             font-size:30px;
             line-height:32px;
+        }
+        @include media('<phone') {
+            font-size:25px;
+            line-height:27px;
         }
     }
 }

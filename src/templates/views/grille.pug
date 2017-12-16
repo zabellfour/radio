@@ -1,0 +1,18 @@
+doctype html
+html(lang='fr')
+  include ../partials/head
+  body
+    include ../partials/header
+    // contain main informative part of the site
+    main#main
+        .container
+            .content-holder
+                // content of the page
+                .content
+                    include ../partials/breadcrumb
+                    h3.h3 Notre grille
+                    include ../partials/nav-panel
+                    include ../partials/accordion-block
+                    include ../partials/information-list
+                include ../partials/sidebar
+    include ../partials/foot

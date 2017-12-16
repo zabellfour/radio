@@ -1,7 +1,7 @@
 /* home post style */
 
 .top-post-home {
-	font: 14px/20px 'Arial';
+	font: 14px/20px $base-font-arial;
 	color: #545454;
 	margin:0 0 15px;
 	@include media('<tablet') {
@@ -9,7 +9,7 @@
 		line-height:17px;
 	}
 	.h4 {
-		font: bold 40px/42px 'TradeGothic';
+		font: bold 40px/42px $base-font-sans-serif;
 		margin:0 0 2px;
 		color: $blue;
 		@include media('<desktop') {
@@ -23,7 +23,7 @@
 		}
 	}
 	.h5 {
-		font: bold 14px/20px 'Arial';
+		font: bold 14px/20px $base-font-arial;
 		text-transform:uppercase;
 		color:$blue;
 		margin:0 0 14px;
@@ -128,10 +128,7 @@
 		}
 	}
 	.data {
-		font-family:'Arial';
-		font-weight:normal;
-		font-size:12px;
-		line-height:14px;
+		font: normal 12px/14px $base-font-arial;
 		@include media('<phone') {line-height:23px;}
 	}
 	.logo-box {
@@ -175,7 +172,7 @@
 
 .video-post {
 	color: #545454;
-	font: 16px/25px 'Arial';
+	font: 16px/25px $base-font-arial;
 	display:flex;
 	justify-content: space-between;
 	@include media('<desktop') {
@@ -224,7 +221,7 @@
 		}
 	}
 	.h4 {
-		font: bold  29px/34px 'TradeGothic';
+		font: bold  29px/34px $base-font-sans-serif;
 		margin:0;
 		@include media('<phone') {
 			font-size:25px;
@@ -232,7 +229,7 @@
 		}
 	}
 	.h3 {
-		font: bold  26px/24px 'TradeGothic';
+		font: bold  26px/24px $base-font-sans-serif;
 		margin:0;
 		@include media('<widescreen') {
 			font-size:21px;

@@ -21,7 +21,7 @@
 		img {width:100%;}
 	}
 	.text-box {
-		font: 14px/18px 'Arial';
+		font: 14px/18px $base-font-arial;
 		width:68%;
 		padding: 0 0 0 17px;
 		margin: -5px 0 0;
@@ -36,7 +36,7 @@
 		font-weight:bold;
 	}
 	.name {
-		font:bold 30px/32px 'TradeGothic';
+		font:bold 30px/32px $base-font-sans-serif;
 		color:$black;
 		@include media('<tablet') {
 			font-size:21px;
@@ -44,7 +44,7 @@
 		}
 	}
 	.info {
-		font:bold 25px/27px 'TradeGothic';
+		font:bold 25px/27px $base-font-sans-serif;
 		color:#777272;
 		@include media('<tablet') {
 			font-size:20px;
@@ -52,7 +52,7 @@
 		}
 	}
 	.info2 {
-		font:16px/18px 'TradeGothic';
+		font:16px/18px $base-font-sans-serif;
 		color:#dd1424;
 		text-transform:uppercase;
 		font-weight:bold;
@@ -99,14 +99,14 @@
 		}
 	}
 	.text-box {
-		font: 13px/20px 'Arial';
+		font: 13px/20px $base-font-arial;
 		width:73%;
 		@include media('<phone') {
 			width:100%;
 		}
 	}
 	.h4 {
-		font: bold 25px/27px 'TradeGothic';
+		font: bold 25px/27px $base-font-sans-serif;
 		text-transform:uppercase;
 		margin:0 0 6px;
 		color:$red;
