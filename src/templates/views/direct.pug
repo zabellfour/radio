@@ -1,0 +1,59 @@
+doctype html
+html(lang='fr')
+	include ../partials/head
+	body
+		include ../partials/header
+		// contain main informative part of the site
+		main#main
+			.container
+				include ../partials/breadcrumb
+				.content-holder
+					.content
+						.video-holder
+							.intro-text
+								h3.h3 En direct...
+							.cusom-player-holder
+								//file frome server
+								video(src="assets/videos/test.mp4" controls poster="assets/videos/rrb-poster.jpg").video-custom
+								//video from you tube
+								//-<div data-type="youtube" data-video-id="YE7VzlLtp-4"></div>
+								//video from vimeo
+								//-<div data-type="vimeo" data-video-id="13301288"></div>
+					.sidebar.video-sidebar
+						h5.h5 L 'INVITE DU MATIN
+						.text-holder
+							p Pour ou Contre, une interview, un débat, un face à face, pour aller plus loin, pour ne pas en rester aux évidences. Pour ou Contre, c’est sans concession, sans faux semblant et avec beaucoup de partie pris.
+						span.time-range 07h30-08h00
+				.content-holder
+					// content of the page
+					.content
+						.time-search-form
+							form(action='#')
+									h5.h5 C’est quoi ce titre ?
+									.input-group.date-select
+										label LE
+										select.selectpicker
+												option 8 december 2017
+												option 31 december 2017
+												option 30 december 2017
+												option 29 december 2017
+									.input-group.h-select
+										label à
+										select.selectpicker
+												option 21
+												option 08
+												option 07
+												option 06
+									.input-group.m-select
+										label h
+										select.selectpicker
+												option 50
+												option 1
+												option 5
+												option 45
+									.input-group.submit-holder
+										input.btn-primary(type='submit', value='ok')
+						.intro-text
+							h3.h3 à suivr
+					include ../partials/sidebar
+		include ../partials/foot

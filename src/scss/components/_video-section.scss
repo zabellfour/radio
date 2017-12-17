@@ -1,0 +1,181 @@
+.video-holder {
+    .intro-text {
+        margin-bottom: 17px;
+    }
+}
+
+.plyr--video {
+    margin-bottom: 21px;
+    .plyr__controls {
+        padding: 3px 7px;
+        border-top: 3px solid $black;
+        background: #1a1a1a;
+    }
+    .plyr__play-large {
+        width: 120px;
+        height: 120px;
+        background: $red;
+        border: none;
+        svg {
+            margin: auto;
+            width: 36px;
+            height: 36px;
+        }
+    }
+    .plyr__controls {
+        [data-plyr="play"],
+        [data-plyr="pause"] {
+            opacity: 1;
+            @include animate(opacity);
+            svg {
+                fill: #a2a2a2;
+                width: 15px;
+                height: 15px;
+            }
+            &:hover {
+                background: transparent;
+                opacity: .7;
+            }
+        }
+        [data-plyr="mute"] {
+            margin-left: auto;
+            @include animate(opacity);
+            svg {
+                fill: #a2a2a2;
+            }
+            &:hover {
+                background: transparent;
+                opacity: .7;
+            }
+        }
+        [data-plyr="fullscreen"] {
+            @include animate(opacity);
+            svg {
+                fill: #a2a2a2;
+            }
+            &:hover {
+                background: transparent;
+                opacity: .7;
+            }
+        }
+        .plyr__progress--played,
+        .plyr__volume--display {
+            color: #a2a2a2;
+        }
+        .plyr__volume {
+            .plyr__volume--display {
+                height: 6px;
+            }
+        }
+    }
+}
+
+.sidebar.video-sidebar {
+    background: transparent;
+    padding-top: 51px;
+    padding-left: 0;
+    font-size: 14px;
+    .h5 {
+        color: $red;
+        margin-bottom: 0;
+    }
+    .text-holder {
+        line-height: 1.45;
+        p {
+            margin-bottom: 13px;
+        }
+    }
+    .time-range {
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        font-weight: 800;
+    }
+}
+
+.time-search-form {
+    background: #f2f2f2;
+    padding: 21px 37px 21px 25px;
+    @include media('<widescreen') {
+        padding: 15px 10px;
+    }
+    .h5 {
+        font-size: 30px;
+        font-weight: bold;
+        color: $blue;
+        padding-right: 0px;
+        margin-bottom: 0;
+        @include media('<widescreen') {
+            font-size: 18px
+        }
+        @include media('<desktop') {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media('<desktop') {
+            flex-wrap: wrap;
+justify-content: center;
+        }
+    }
+    .input-group{
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media('<desktop') {
+            margin: 0;
+        }
+    }
+    .input-group.date-select {
+        width: 200px;
+        margin-right: auto;
+        margin-left: 2%;
+        @include media('<desktop') {
+            margin-right:10px;
+        }
+        .bootstrap-select>.dropdown-toggle {
+            width: 168px;
+            @include media('<desktop') {
+                flex-grow: 1;
+            }
+            
+        }
+    }
+    .input-group.h-select {
+        width: 87px;
+        margin-right: 7px;
+        .bootstrap-select>.dropdown-toggle {
+            width: 70px;
+        }
+    }
+    .input-group.m-select {
+        width: 87px;
+        margin-right: 12px;
+        .bootstrap-select>.dropdown-toggle {
+            width: 70px;
+        }
+    }
+    .input-group.submit-holder {
+        width: 65px;
+        @include media('<desktop') {
+            width: 40px;
+        }
+    }
+    .btn-primary {
+        width: 62px;
+        min-width: 0;
+        border-radius: 18px;
+        @include media('<desktop') {
+            width: 40px;
+        }
+    }
+    .btn.dropdown-toggle.btn-default{
+        padding:0 16px 0 9px;
+    }
+    .submit-holder {}
+}

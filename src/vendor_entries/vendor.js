@@ -10,5 +10,6 @@ module.exports = [
     './node_modules/bootstrap/js/transition.js',
     './node_modules/bootstrap/js/dropdown.js',
     './node_modules/bootstrap/js/collapse.js',
-    './node_modules/bootstrap-select/dist/js/bootstrap-select.min.js'
+    './node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',
+    './node_modules/plyr/dist/plyr.js'
 ];

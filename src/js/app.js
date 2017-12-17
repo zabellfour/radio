@@ -14,8 +14,11 @@ import sliderBaner from './modules/sliders/sliderBaner';
 //Forms
 import customSelect from './modules/customSelect';
 
-//maps 
+//Maps 
 import map from './modules/map';
+
+//Custom Video
+import customVideo from './modules/video';
 
 (($) => {
     'use strict';
@@ -30,7 +33,7 @@ import map from './modules/map';
         //Forms
         customSelect.init();
         map.init();
-     
+        customVideo.init();
 
     });
 
