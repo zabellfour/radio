@@ -1,0 +1,109 @@
+/* podcast style */
+
+.intro-article {
+	display:flex;
+	justify-content: space-between;
+	margin:0 0 39px;
+	@include media('<tablet') {margin:0 0 25px;}
+	@include media('<phone') {flex-direction: column-reverse;}
+	.text {
+		font: 16px/21px $base-font-arial;
+		width:60%;
+		margin:-8px 0 0;
+		@include media('<desktop') {
+			width: 68%;
+			margin:0;
+		}
+		@include media('<phone') {
+			width:100%;
+		}
+	}
+	.img {
+		width:31.5%;
+		@include media('<phone') {
+			width:100%;
+			margin:0 0 15px;
+		}
+	}
+	.h3 {
+		font: bold 40px/42px $base-font-sans-serif;
+		margin:0 0 10px;
+		color: $blue;
+		@include media('<desktop') {
+			font-size:30px;
+			line-height:32px;
+		}
+		@include media('<phone') {
+			font-size:24px;
+			line-height:26px;
+			margin:0 0 5px;
+		}
+	}
+	.info {
+		font: bold 16px/18px $base-font-sans-serif;
+		color:$red;
+		text-transform:uppercase;
+		display:block;
+		margin:0 0 15px;
+	}
+	.time {
+		font: bold 20px/22px $base-font-arial;
+		display:block;
+		margin:0 0 5px;
+		@include media('<desktop') {
+			font-size:17px;
+			line-height:19px;
+		}
+	}
+	.reminders {
+		margin:0 0 23px;
+	}
+	img {
+		width:100%;
+		vertical-align:top;
+	}
+}
+
+.podcast-posts {
+	margin:0 0 20px;
+	.post {
+		margin:0 0 32px;
+	}
+	.title {
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		margin:0 0 13px;
+		padding:0 0 13px;
+		border-bottom:1px solid #e4e4e4;
+		@include media('<phone') {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+	.h4 {
+		font: bold 30px/32px $base-font-sans-serif;
+		margin:0;
+		color: $black;
+		@include media('<desktop') {
+			font-size:22px;
+			line-height:24px;
+		}
+		@include media('<phone') {margin:0 0 10px;}
+	}
+	.link {
+		@include animate(opacity);
+		font: bold 14px/16px $base-font-arial;
+		text-transform:uppercase;
+		text-decoration:none;
+		&:hover {opacity:.8;}
+		color: $blue;
+	}
+	.text {
+		font: 14px/19px $base-font-arial;
+	}
+	.btn-primary {
+		padding:5px 16px;
+		@include media('<desktop') {min-width:100px;}
+	}
+}

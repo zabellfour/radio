@@ -1,0 +1,26 @@
+doctype html
+html(lang='fr')
+  include ../partials/head
+  body
+    include ../partials/header
+    // contain main informative part of the site
+    main#main
+        .container
+            .content-holder
+                // content of the page
+                .content
+                    include ../partials/breadcrumb
+                    include ../partials/nav-pages
+                    // article of the page
+                    .intro-article
+                        .text
+                            h3.h3 Chronique d'E. NOUAR
+                            span.info Le rendez-vous éditorial de radio rythme bleu
+                            span.time Le lundi à 7h00
+                            span.reminders Rediffusion dans le journal de 11h30 et à 16h15
+                            p Sur un ton volontairement satirique, Elizabeth NOUAR décrypte l'actualité politique de la Nouvelle-Calédonie.
+                        .img
+                            img(src="assets/images/post-img4.jpg", alt="image description")
+                    include ../partials/post-podcast
+                include ../partials/sidebar
+    include ../partials/foot
