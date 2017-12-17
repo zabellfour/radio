@@ -33,5 +33,11 @@ $breadcrumb-color: #777272;
 				}
 			}
 		}
+		a {
+			@include animate(color);
+			color:$breadcrumb-color;
+			text-decoration:none;
+			&:hover {color:$blue;}
+		}
 	}
 }
