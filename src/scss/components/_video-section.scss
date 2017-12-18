@@ -16,10 +16,18 @@
         height: 120px;
         background: $red;
         border: none;
+        @include media('<tablet') {
+width: 60px;
+height: 60px;
+        }
         svg {
             margin: auto;
             width: 36px;
             height: 36px;
+            @include media('<tablet') {
+                width: 25px;
+                height: 25px;
+            }
         }
     }
     .plyr__controls {
@@ -75,6 +83,9 @@
     padding-top: 51px;
     padding-left: 0;
     font-size: 14px;
+    @include media('<tablet') {
+        padding:10px 0;
+    }
     .h5 {
         color: $red;
         margin-bottom: 0;
@@ -90,11 +101,15 @@
         letter-spacing: 0.5px;
         font-weight: 800;
     }
+    &:before,&:after{
+        display: none;
+    }
 }
 
 .time-search-form {
     background: #f2f2f2;
     padding: 21px 37px 21px 25px;
+    margin-bottom: 20px;
     @include media('<widescreen') {
         padding: 15px 10px;
     }
@@ -119,10 +134,10 @@
         justify-content: space-between;
         @include media('<desktop') {
             flex-wrap: wrap;
-justify-content: center;
+            justify-content: center;
         }
     }
-    .input-group{
+    .input-group {
         flex-shrink: 0;
         display: flex;
         align-items: center;
@@ -136,34 +151,81 @@ justify-content: center;
         margin-right: auto;
         margin-left: 2%;
         @include media('<desktop') {
-            margin-right:10px;
+            margin-right: 10px;
+        }
+        @include media('<640px') {
+            width: 100%;
+            padding: 0 20px;
+            margin:10px ;
+            justify-content: center;
+        }
+        label {
+            padding: 0 10px;
+            display: block;
+            @include media('<640px') {
+             padding:0 6px;
+            }
         }
         .bootstrap-select>.dropdown-toggle {
             width: 168px;
             @include media('<desktop') {
                 flex-grow: 1;
             }
-            
+            @include media('<640px') {
+                width: 234px;
+            }
         }
     }
     .input-group.h-select {
         width: 87px;
         margin-right: 7px;
+        @include media('<640px') {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin:10px ;
+        }
+        label {
+            @include media('<640px') {
+                padding: 0 10px;
+            }
+        }
         .bootstrap-select>.dropdown-toggle {
             width: 70px;
+            @include media('<640px') {
+                width: 234px;
+            }
         }
     }
     .input-group.m-select {
         width: 87px;
         margin-right: 12px;
+        @include media('<640px') {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin:10px ;
+        }
+        label {
+            @include media('<640px') {
+                padding: 0 10px;
+            }
+        }
         .bootstrap-select>.dropdown-toggle {
             width: 70px;
+            @include media('<640px') {
+                width: 234px;
+            }
         }
     }
     .input-group.submit-holder {
         width: 65px;
         @include media('<desktop') {
             width: 40px;
+        }
+        @include media('<640px') {
+            width: 100%;
+            padding-left: 28px;
         }
     }
     .btn-primary {
@@ -173,9 +235,26 @@ justify-content: center;
         @include media('<desktop') {
             width: 40px;
         }
+        @include media('<640px') {
+            width: 260px;
+            margin:0 auto;
+            font-size: 18px;
+            padding: 10px;
+        }
     }
-    .btn.dropdown-toggle.btn-default{
-        padding:0 16px 0 9px;
+    .btn.dropdown-toggle.btn-default {
+        padding: 0 16px 0 9px;
     }
     .submit-holder {}
+}
+.timeline-holder{
+    .h3{
+
+        text-transform: uppercase;
+        color: $black;
+       margin-bottom: 0;
+    }
+    .posts-arhive{
+        padding-top: 0;
+    }
 }

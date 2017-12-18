@@ -1,0 +1,57 @@
+doctype html
+html(lang='fr')
+	- var name = "rrb"
+	include ../partials/head
+	body
+		include ../partials/header
+		// contain main informative part of the site
+		main#main
+			.container
+				.content-holder
+					// content of the page
+					.content
+						include ../partials/breadcrumb
+						article.history-article
+							h3.h3 Une histoire
+							img(src="/assets/images/histoire1.jpg", alt="histoire image").img-responsive
+							.intro-holder
+								.text-holder
+									h4.h4 Radio rythm bleu c‘est plus qu‘une radio
+									p C'est un observateur et un acteur de l'histoire récente de la Nouvelle-Calédonie. C'est une rencontre et une proximité de chaque instant entre ceux qui la vivent, l'animent et la font, et ceux qui l'accompagnent, la portent et l'écoutent. 
+									p
+										strong C'est aussi une formidable aventure qui ne fait que commencer… Et qui vous attend !!!
+								.img-holder
+									img(src="/assets/images/histoire2.png", alt="radio rythme blue")
+								p
+									i Radio Rythme Bleu est une radio généraliste qui allie, au mieux, information, musique, jeux et services. Elle est offerte au plus grand nombre dans toute la diversité ethnique, politique, sociale, culturelle et géographique de la Nouvelle-Calédonie.
+							.year-row
+								strong.year 1985
+								.text-col
+									strong RRB est née en 1985, lorsque les évènements faisaient vaciller l'espoir des populations. 
+									p Depuis l'origine, l'exigence reconnue de l'information – véritable valeur ajoutée – et l’engagement de chaque instant de professionnels de qualité et de toute une équipe ont positionné RRB comme radio leader.
+							.img-text-row
+								.img-holder
+									img(src="/assets/images/histoire3.jpg", alt="histoire image")
+									strong.img-descr 1988, Elizabeth Nouar en reportage aux Belep 
+								.text-holder
+									p Acteur engagé de l'histoire contemporaine de la Nouvelle-Calédonie, Radio Rythme Bleu est toujours restée fidèle à l'idée du maintien de la Calédonie dans la France.
+									p Elle s’inscrit aujourd'hui pleinement dans le processus né des accords de Matignon, et dans l'esprit et la lettre de l'Accord de Nouméa, pour un avenir réconcilié et consensuel de la Nouvelle-calédonie.
+							.logo-row
+								img(src="/assets/images/europe-logo.png", alt="EUROPE1").logo
+								p Profondément enracinée localement, parfaitement intégrée régionalement, Radio Rythme Bleu assure, aussi, une vraie continuité nationale avec la métropole, grâce à une convention avec Europe 1, qui participe à l'enrichissement de ses programmes et notamment de ses rendez-vous d'information. 
+							.img-text-row.fzlg
+								.img-holder
+									img(src="/assets/images/histoire4.jpg", alt="histoire image")
+									strong.img-descr "Carte Chance" est le jeu radiophonique le mieux doté de Calédonie. Depuis son lancement en 1986, il rencontre toujours un immense succès.
+								.text-holder
+									strong Radio Rythme Bleu est une radio associative
+									p Pas d'actionnaires, pas de dividendes à distribuer, elle a toujours refusé d’opter pour un statut commercial. C'est aussi dans cet esprit qu'elle a choisi d'émettre, malgré des coûts de diffusion élevés, sur l’ensemble de la Nouvelle-Calédonie, même là où il n'y a pas de contrepartie publicitaire.
+									p Cela procède aussi d'une volonté d'assurer, aux côtés d'autres radios, un nécessaire pluralisme sur l'ensemble du territoire.
+							.marked-text
+								strong Radio Rythme Bleu est la première radio de Nouvelle-Calédonie.
+								p Plusieurs enquêtes et sondages successifs la placent 1ère en audience cumulée, 1ère en durée d’écoute et 1ère en parts de marché ! Cette position de radio leader, RRB la doit à la variété de ses programmes, à l'excellence de son information, à son investissement et à sa présence partout, pour tous et sur tous les terrains (politiques, économiques, sportifs, culturels, associatifs, religieux, vies des communes, fonctionnement des institutions…).
+								p Elle le doit aussi à sa vocation assumée de radio de divertissement et de proximité pour tous les calédoniens (couleur musicale, dédicaces, anniversaires, humour, …). Les jeux participent également à cette réussite : sur Radio Rythme Bleu, il n'y a pas de jours sans jeux ! ("Carte chance", rendez-vous SMS, Radio Stop,…)
+
+									
+					include ../partials/sidebar
+		include ../partials/foot
