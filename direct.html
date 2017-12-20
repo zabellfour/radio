@@ -23,9 +23,7 @@
             <div class="container">
               <div class="header-center-top-wrapper">
                 <div class="mob-menu">
-                  <button class="menu-opener">
-                    <div class="burger-holder"><span></span><span></span><span></span></div><span class="text">MENU</span>
-                  </button>
+                  <button class="menu-opener"><span class="burger-holder"><span></span><span></span><span></span></span><span class="text">MENU</span></button>
                 </div><a class="logo" href="#"><img src="assets/images/logo-color.png" alt="RRB"></a>
                 <div class="hero-holder">
                   <div class="name-holder"><span class="descr">à l’antenne</span><strong class="name">jeudi hippique</strong></div><img src="assets/images/header-hero.png" alt="jeudi hippique">
@@ -48,27 +46,27 @@
             <div class="container">
               <div class="owl-carousel owl-theme program-slider">
                 <div class="slide now-playing">
-                  <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                  <time class="time" datetime="2017-05-15T07:30">7h30</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 8:00">8h00</time>
+                  <time class="time" datetime="2017-05-15T08:00">8h00</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 9:00">9h00</time>
+                  <time class="time" datetime="2017-05-15T09:00">9h00</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 10:00">10h00</time>
+                  <time class="time" datetime="2017-05-15T10:00">10h00</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 11:30">11h30</time>
+                  <time class="time" datetime="2017-05-15T11:30">11h30</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 12:30">12h30</time>
+                  <time class="time" datetime="2017-05-15T12:30">12h30</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
               </div>
@@ -85,7 +83,7 @@
                 <li><a href="#"><i class="icon-frequence"></i><strong class="link-text">fréquences</strong></a></li>
               </ul>
               <form class="search-form" action="#">
-                <input type="text" placeholder="Rechercher">
+                <input type="text" placeholder="Rechercher" required>
                 <button type="submit"><i class="icon-search"></i></button>
               </form>
             </div>
@@ -94,7 +92,7 @@
                 <ul class="nav">
                   <li><a href="#">Actualités</a></li>
                   <li><a href="#">Programmes</a></li>
-                  <li><a href="#">Vidéos</a></li>
+                  <li class="active"><a href="#">Vidéos</a></li>
                   <li class="has-dropdown"><span class="drop-opener">RRB</span>
                     <ul class="drop-down">
                       <li><a href="#">Histoire</a></li>
@@ -112,10 +110,10 @@
                 <div class="login-form">
                   <form action="#">
                     <div class="row-input">
-                      <input class="form-control" type="text" placeholder="Identifiant" name="name">
+                      <input class="form-control" type="text" placeholder="Identifiant" name="name" required>
                     </div>
                     <div class="row-input">
-                      <input class="form-control form-control-btn" type="password" placeholder="Mot de passe" name="name">
+                      <input class="form-control form-control-btn" type="password" placeholder="Mot de passe" name="name" required>
                       <button class="btn" type="submit">OK</button>
                     </div>
                   </form>
@@ -132,10 +130,10 @@
         <!-- breadcrumb of the page-->
         <div class="breadcrumb-wrap">
           <ul class="breadcrumb">
-            <li>Accueil</li>
-            <li>RRB</li>
-            <li>Équipe</li>
-            <li>Animateurs</li>
+            <li> <a href="#">Accueil</a></li>
+            <li> <a href="#">RRB</a></li>
+            <li> <a href="#">Équipe</a></li>
+            <li> <a href="#">Animateurs</a></li>
           </ul>
         </div>
         <div class="content-holder">
@@ -148,7 +146,9 @@
                 <!--file frome server-->
                 <video class="video-custom" src="assets/videos/test.mp4" controls poster="assets/videos/rrb-poster.jpg"></video>
                 <!--video from you tube-->
+                <!--<div data-type="youtube" data-video-id="YE7VzlLtp-4"></div>-->
                 <!--video from vimeo-->
+                <!--<div data-type="vimeo" data-video-id="13301288"></div>-->
               </div>
             </div>
           </div>
@@ -203,7 +203,7 @@
               <div class="posts-arhive">
                 <div class="row">
                   <div class="time-box">
-                    <time>05h00</time>
+                    <time datetime="2012-12-23T08:23:11+07:00">05h00 </time>
                   </div>
                   <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
                   <div class="text">
@@ -213,7 +213,7 @@
                 </div>
                 <div class="row">
                   <div class="time-box">
-                    <time>05h00</time>
+                    <time datetime="2012-12-23T08:23:11+07:00">05h00</time>
                   </div>
                   <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
                   <div class="text">
@@ -223,7 +223,7 @@
                 </div>
                 <div class="row">
                   <div class="time-box">
-                    <time>05h00</time>
+                    <time datetime="2012-12-23T08:23:11+07:00">05h00</time>
                   </div>
                   <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
                   <div class="text">
@@ -233,7 +233,7 @@
                 </div>
                 <div class="row">
                   <div class="time-box">
-                    <time>05h00</time>
+                    <time datetime="2012-12-23T08:23:11+07:00">05h00</time>
                   </div>
                   <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
                   <div class="text">
@@ -246,7 +246,7 @@
                   <div class="img"><img src="assets/images/post-img2.jpg" alt="image description"></div>
                   <div class="text">
                     <h3 class="h3">LIONEL SABOT ROBERT CANAL</h3>
-                    <time class="time">05h00 - 9h00</time>
+                    <time class="time" datetime="2012-12-23T08:23:11+07:00">05h00 - 9h00</time>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.</p>
                   </div>
                 </div>
@@ -390,7 +390,7 @@
                     </label>
                   </div>
                   <div class="input-row">
-                    <input type="email" placeholder="Adresse mail" required="true  ">
+                    <input type="email" placeholder="Adresse mail" required>
                   </div>
                   <div class="input-row">
                     <button type="submit">Incrioption</button>

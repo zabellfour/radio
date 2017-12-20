@@ -5,16 +5,16 @@
             .box
                 label Nom
                     span *
-                input.form-control(type='text', placeholder='' name='name')
+                input.form-control(type='text', placeholder='' name='name' required)
             .box
                 label e-mail
                     span *
-                input.form-control(type='text', placeholder='' name='name')
+                input.form-control(type='text', placeholder='' name='name' required)
         .row
             .box
                 label objet
                     span *
-                select.selectpicker
+                select.selectpicker(required)
                     option Service Pub
                     option Service Pub1
                     option Service Pub3
@@ -23,7 +23,7 @@
             .box
                 label message 
                     span *
-                textarea
+                textarea(required)
         .row
             .box
                 span.info * Champs obligatoires

@@ -2,6 +2,7 @@ doctype html
 html(lang='fr')
 	include ../partials/head
 	body
+		- var name = "videos"
 		include ../partials/header
 		// contain main informative part of the site
 		main#main
@@ -16,9 +17,9 @@ html(lang='fr')
 								//file frome server
 								video(src="assets/videos/test.mp4" controls poster="assets/videos/rrb-poster.jpg").video-custom
 								//video from you tube
-								//-<div data-type="youtube" data-video-id="YE7VzlLtp-4"></div>
+								//<div data-type="youtube" data-video-id="YE7VzlLtp-4"></div>
 								//video from vimeo
-								//-<div data-type="vimeo" data-video-id="13301288"></div>
+								//<div data-type="vimeo" data-video-id="13301288"></div>
 					.sidebar.video-sidebar
 						h5.h5 L 'INVITE DU MATIN
 						.text-holder

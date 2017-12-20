@@ -1,324 +1,389 @@
 /* home post style */
 
 .top-post-home {
-	font: 14px/20px $base-font-arial;
-	color: #545454;
-	margin:0 0 15px;
-	@include media('<tablet') {
-		font-size:12px;
-		line-height:17px;
-	}
-	.h4 {
-		font: bold 40px/42px $base-font-sans-serif;
-		margin:0 0 2px;
-		color: $blue;
-		@include media('<desktop') {
-			font-size:27px;
-			line-height:30px;
-		}
-		@include media('<tablet') {
-			font-size:25px;
-			line-height:28px;
-			margin:0 0 5px;
-		}
-	}
-	.h5 {
-		font: bold 14px/20px $base-font-arial;
-		text-transform:uppercase;
-		color:$blue;
-		margin:0 0 14px;
-	}
-	.img-box {
-		position:relative;
-	}
-	.block-info {
-		position:absolute;
-		right:18px;
-		bottom:31px;
-	}
-	img {
-		width:100%;
-		vertical-align:top;
-	}
-	p {
-		margin:0 0 8px;
-		@include media('<tablet') {margin:0 0 11px;}
-	}
+    font: 14px/20px $base-font-arial;
+    color: #545454;
+    margin: 0 0 15px;
+    @include media('<tablet') {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .h4 {
+        font: bold 40px/42px $base-font-sans-serif;
+        margin: 0 0 2px;
+        color: $blue;
+        @include media('<desktop') {
+            font-size: 27px;
+            line-height: 30px;
+        }
+        @include media('<tablet') {
+            font-size: 25px;
+            line-height: 28px;
+            margin: 0 0 5px;
+        }
+    }
+    .h5 {
+        font: bold 14px/20px $base-font-arial;
+        text-transform: uppercase;
+        color: $blue;
+        margin: 0 0 14px;
+    }
+    .img-box {
+        position: relative;
+    }
+    .block-info {
+        position: absolute;
+        right: 18px;
+        bottom: 31px;
+    }
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+    p {
+        margin: 0 0 8px;
+        @include media('<tablet') {
+            margin: 0 0 11px;
+        }
+    }
 }
 
 .info-like,
 .info-comment {
-	color: $white;
-	position:relative;
-	padding:0 0 0 20px;
-	font-size: 12px;
-	font-weight: bold;
-	margin:0 0 0 20px;
-	&:before {
-		@extend [class^="icon-"];
-		@extend .icon-favorite_border;
-		position:absolute;
-		font-size:16px;
-		left:0;
-		top: 48%;
-		transform:translateY(-50%);
-	}
-	@include media('<tablet') {display:none;}
+    color: $white;
+    position: relative;
+    padding: 0 0 0 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 0 20px;
+    &:before {
+        @extend [class^="icon-"];
+        @extend .icon-favorite_border;
+        position: absolute;
+        font-size: 16px;
+        left: 0;
+        top: 48%;
+        transform: translateY(-50%);
+    }
+    @include media('<tablet') {
+        display: none;
+    }
 }
 
 .info-comment {
-	&:before {
-		content: "\e902";
-		font-size:12px;
-	}
+    &:before {
+        content: "\e902";
+        font-size: 12px;
+    }
 }
 
 .three-column {
-	color: #545454;
-	margin:0 0 44px;
-	font-size:22px;
-	line-height:25px;
-	font-weight:bold;
-	display:flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	@include media('<phone') {
-		font-size:18px;
-		line-height:21px;
-		display:block;
-	}
-	.box {
-		width:32.5%;
-		background: $gray-light;
-		padding:12px 10px;
-		@include media('<desktop') {
-			width:49%;
-			margin:0 0 10px;
-		}
-		@include media('<phone') {
-			width:100%;
-			display:flex;
-			justify-content: space-between;
-			padding:10px 19px 10px;
-			margin:0;
-		}
-		&:last-child {
-			@include media('<desktop') {width:100%;}
-			@include media('<phone') {
-				display:block;
-				margin: 14px 0 0;
-				padding: 0;
-			}
-		}
-	}
-	.title {
-		background: #003dd0;
-		display:flex;
-		justify-content: space-between;
-		font-size:23px;
-		color:$yellow;
-		text-transform:uppercase;
-		margin:-10px -10px 0;
-		padding: 2px 5px 0px 10px;
-		align-items: center;
-		@include media('<phone') {
-			font-size:24px;
-			margin:0;
-			padding:5px 8px 3px 20px;
-		}
-	}
-	.data {
-		font: normal 12px/14px $base-font-arial;
-		@include media('<phone') {line-height:23px;}
-	}
-	.logo-box {
-		img {margin:0;}
-	}
-	.row {
-		padding:0 0 10px 6px;
-		margin:0 0 2px;
-		border-bottom:1px solid #d8d8d8;
-		@include media('<phone') {
-			padding: 5px 0 12px;
-			margin:0 0 5px;
-		}
-		&:last-child {
-			padding:0 0 0 6px;
-			border:none;
-			@include media('<phone') {padding: 5px 0 12px;}
-		}
-	}
-	.block {
-		padding:4px 0 0 0;
-		@include media('<phone') {padding:4px 10px 0 18px;}
-	}
-	.img-holder {
-		@include media('<phone') {width:45%;}
-	}
-	.text-holder {
-		@include media('<phone') {
-			width:55%;
-			padding:8px 0 0 11px;
-		}
-	}
-	img {
-		width:100%;
-		vertical-align:bottom;
-		margin:0 0 13px;
-		@include media('<tablet') {margin:0;}
-	}
-	p {margin:0;}
+    color: #545454;
+    margin: 0 0 44px;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include media('<phone') {
+        font-size: 18px;
+        line-height: 21px;
+        display: block;
+    }
+    .box {
+        width: 32.5%;
+        background: $gray-light;
+        padding: 12px 10px;
+        @include media('<desktop') {
+            width: 49%;
+            margin: 0 0 10px;
+        }
+        @include media('<phone') {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 19px 10px;
+            margin: 0;
+        }
+        &:last-child {
+            @include media('<desktop') {
+                width: 100%;
+            }
+            @include media('<phone') {
+                display: block;
+                margin: 14px 0 0;
+                padding: 0;
+            }
+        }
+    }
+    .title {
+        background: #003dd0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 23px;
+        color: $yellow;
+        text-transform: uppercase;
+        margin: -10px -10px 0;
+        padding: 2px 5px 0px 10px;
+        align-items: center;
+        @include media('<phone') {
+            font-size: 24px;
+            margin: 0;
+            padding: 5px 8px 3px 20px;
+        }
+    }
+    .data {
+        font: normal 12px/14px $base-font-arial;
+        @include media('<phone') {
+            line-height: 23px;
+        }
+    }
+    .logo-box {
+        img {
+            margin: 0;
+        }
+    }
+    .row {
+        padding: 0 0 10px 6px;
+        margin: 0 0 2px;
+        border-bottom: 1px solid #d8d8d8;
+        @include media('<phone') {
+            padding: 5px 0 12px;
+            margin: 0 0 5px;
+        }
+        &:last-child {
+            padding: 0 0 0 6px;
+            border: none;
+            @include media('<phone') {
+                padding: 5px 0 12px;
+            }
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            @include animate(background-color color);
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    .block {
+        padding: 4px 0 0 0;
+        @include media('<phone') {
+            padding: 4px 10px 0 18px;
+        }
+    }
+    .img-holder {
+        @include media('<phone') {
+            width: 45%;
+        }
+    }
+    .text-holder {
+        a {
+            color: inherit;
+            @include animate(background-color color);
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+        @include media('<phone') {
+            width: 55%;
+            padding: 8px 0 0 11px;
+        }
+    }
+    img {
+        width: 100%;
+        vertical-align: bottom;
+        margin: 0 0 13px;
+        @include media('<tablet') {
+            margin: 0;
+        }
+    }
+    p {
+        margin: 0;
+    }
 }
 
 .video-post {
-	color: #545454;
-	font: 16px/25px $base-font-arial;
-	display:flex;
-	justify-content: space-between;
-	@include media('<desktop') {
-		display:block;
-		margin:10px 0 0;
-	}
-	@include media('<phone') {
-		font-size:12px;
-		line-height:17px;
-	}
-	.box {
-		width:48.5%;
-		@include media('<desktop') {
-			width:100%;
-		}
-	}
-	.row {
-		display:flex;
+    color: #545454;
+    font: 16px/25px $base-font-arial;
+    display: flex;
+    justify-content: space-between;
+    @include media('<desktop') {
+        display: block;
+        margin: 10px 0 0;
+    }
+    @include media('<phone') {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .box {
+        width: 48.5%;
+        @include media('<desktop') {
+            width: 100%;
+        }
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 20px;
+        padding: 0 0 20px;
+        border-bottom: 1px solid #ebeff2;
+    }
+    .img-row {
+        min-width: 140px;
+        @include media('<phone') {
+            min-width: 108px;
+            padding: 0 0 0 18px;
+        }
+    }
+    .text-row {
+        flex: auto;
+        padding: 0 0 0 21px;
+        display: flex;
+        flex-direction: column;
 		justify-content: space-between;
-		margin:0 0 20px;
-		padding:0 0 20px;
-		border-bottom:1px solid #ebeff2;
-	}
-	.img-row {
-		min-width:140px;
-		@include media('<phone') {
-			min-width:108px;
-			padding:0 0 0 18px;
-		}
-	}
-	.text-row {
-		flex:auto;
-		padding:0 0 0 21px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		@include media('<phone') {
-			padding:0 18px 0 15px;
-		}
-	}
-	.img {
-		margin:0 0 18px;
-		position:relative;
-		@include media('<phone') {
-			margin:0 0 7px;
-		}
-	}
-	.h4 {
-		font: bold  29px/34px $base-font-sans-serif;
-		margin:0;
-		@include media('<phone') {
-			font-size:25px;
-			line-height:28px;
-		}
-	}
-	.h3 {
-		font: bold  26px/24px $base-font-sans-serif;
-		margin:0;
-		@include media('<widescreen') {
-			font-size:21px;
-			line-height:23px;
-		}
-		@include media('<phone') {
-			font-size:17px;
-			line-height:22px;
-		}
-	}
-	.text {
-		padding:0 0 48px 10px;
-		border-bottom:1px solid #ebeff2;
-		@include media('<desktop') {
-			border:none;
-			padding:0 0 22px;
-		}
-	}
-	.title {
-		display:flex;
-		justify-content: space-between;
-		margin:0 28px 12px 0;
-		align-items: center;
-		@include media('<desktop') {margin:0 0 12px;}
-		@include media('<phone') {margin:0 13px 5px 0;}
-		.btn-play {
-			min-width:60px;
-			height:60px;
-			margin:0 30px 0 0;
-			font-size:25px;
-			margin:0;
-			@include media('<phone') {
-				height:44px;
-				min-width:44px;
-				font-size:23px;
-			}
-		}
-	}
-	.data {
-		line-height:16px;
-		@include media('<phone') {
-			font-size:14px;
-		}
-	}
-	.btn-wifi,
-	.btn-play {
-		@include animate(color background);
-		float:right;
-		border-radius:100px;
-		background: $red;
-		color:$white;
-		position:relative;
-		min-width:40px;
-		height:40px;
-		font-size:18px;
-		margin:3px 6px 0 0;
-		border: 2px solid $red;
-		text-decoration:none;
-		@include media('<phone') {
-			min-width:26px;
-			height:26px;
-			font-size:14px;
-			margin:0;
-		}
-		&:before {
-			@extend [class^="icon-"];
-			@extend .icon-play;
-			position:absolute;
-			left:55%;
-			top:50%;
-			transform:translate(-50%,-50%);
-		}
-		&:hover {
-			background:$white;
-			color: $red;
-		}
-	}
-	.btn-wifi:before {
-		@extend .icon-rss;
-		left:50%;
-	}
-	.info-like {
-		position:absolute;
-		right: 18px;
-		bottom: 6px;
-	}
-	img {
-		width:100%;
-		vertical-align:top;
-	}
-	p {margin:0;}
+		flex-basis:100%;
+        @include media('<phone') {
+            padding: 0 18px 0 15px;
+        }
+        .block .h3,
+        .block .h4 {
+            a {
+                color: inherit;
+                @include animate(background-color color);
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                    color: $blue;
+                }
+            }
+        }
+    }
+    .img {
+        margin: 0 0 18px;
+        position: relative;
+        @include media('<phone') {
+            margin: 0 0 7px;
+        }
+    }
+    .h4 {
+        font: bold 29px/34px $base-font-sans-serif;
+        margin: 0;
+        @include media('<phone') {
+            font-size: 25px;
+            line-height: 28px;
+        }
+        a {
+            color: inherit;
+            @include animate(background-color color);
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+    }
+    .h3 {
+        font: bold 26px/24px $base-font-sans-serif;
+        margin: 0;
+        @include media('<widescreen') {
+            font-size: 21px;
+            line-height: 23px;
+        }
+        @include media('<phone') {
+            font-size: 17px;
+            line-height: 22px;
+        }
+    }
+    .text {
+        padding: 0 0 48px 10px;
+        border-bottom: 1px solid #ebeff2;
+        @include media('<desktop') {
+            border: none;
+            padding: 0 0 22px;
+        }
+    }
+    .title {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 28px 12px 0;
+        align-items: center;
+        @include media('<desktop') {
+            margin: 0 0 12px;
+        }
+        @include media('<phone') {
+            margin: 0 13px 5px 0;
+        }
+        .btn-play {
+            min-width: 60px;
+            height: 60px;
+            margin: 0 30px 0 0;
+            font-size: 25px;
+            margin: 0;
+            @include media('<phone') {
+                height: 44px;
+                min-width: 44px;
+                font-size: 23px;
+            }
+        }
+    }
+    .data {
+        line-height: 16px;
+        @include media('<phone') {
+            font-size: 14px;
+        }
+    }
+    .btn-wifi,
+    .btn-play {
+        @include animate(color background);
+        float: right;
+        border-radius: 100px;
+        background: $red;
+        color: $white;
+        position: relative;
+        min-width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin: 3px 6px 0 0;
+        border: 2px solid $red;
+        text-decoration: none;
+        @include media('<phone') {
+            min-width: 26px;
+            height: 26px;
+            font-size: 14px;
+            margin: 0;
+        }
+        &:before {
+            @extend [class^="icon-"];
+            @extend .icon-play;
+            position: absolute;
+            left: 55%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            background: $white;
+            color: $red;
+        }
+    }
+    .btn-wifi:before {
+        @extend .icon-rss;
+        left: 50%;
+    }
+    .info-like {
+        position: absolute;
+        right: 18px;
+        bottom: 6px;
+    }
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+    p {
+        margin: 0;
+    }
 }

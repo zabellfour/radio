@@ -2,6 +2,10 @@
     .intro-text {
         margin-bottom: 17px;
     }
+    .cusom-player-holder{
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
 
 .plyr--video {
@@ -10,6 +14,9 @@
         padding: 3px 7px;
         border-top: 3px solid $black;
         background: #1a1a1a;
+    }
+    .plyr__volume{
+        display: none;
     }
     .plyr__play-large {
         width: 120px;

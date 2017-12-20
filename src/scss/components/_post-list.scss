@@ -116,6 +116,15 @@
 		text-transform:uppercase;
 		margin:0 0 6px;
 		color:$red;
+		a{
+			text-decoration: none;
+			color:inherit;
+			@include animate(color);
+			&:hover{
+				color:$blue;
+				text-decoration: none;
+			}
+		}
 	}
 	img{
 		width:100%;

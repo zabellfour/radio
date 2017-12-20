@@ -2,6 +2,7 @@ doctype html
 html(lang='fr')
   include ../partials/head
   body
+    - var name = "program"
     include ../partials/header
     // contain main informative part of the site
     main#main
@@ -20,7 +21,7 @@ html(lang='fr')
                             .text
                                 a(href="#").h3 LIONEL SABOT ROBERT CANAL
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.
-                                time.time Le vendredi à 17h00 et le samedi à 11h00
+                                time.time(datetime="2012-12-23T08:23:11+07:00") Le vendredi à 17h00 et le samedi à 11h00
                                 span.reminders Des rappels des titres et des flash à 7h00 - 7h30 - 8h00 - 11h00 - 13h00 - 17h00 - 19h00
                         .row
                             .img
@@ -28,27 +29,27 @@ html(lang='fr')
                             .text
                                 h3.h3 LIONEL SABOT ROBERT CANAL
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.
-                                time.time Le vendredi à 17h00 et le samedi à 11h00
+                                time.time(datetime="2012-12-23T08:23:11+07:00") Le vendredi à 17h00 et le samedi à 11h00
                         .row
                             .img
                                 img(src="assets/images/post-img2.jpg", alt="image description")
                             .text
                                 h3.h3 LIONEL SABOT ROBERT CANAL
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.
-                                time.time Le vendredi à 17h00 et le samedi à 11h00
+                                time.time(datetime="2012-12-23T08:23:11+07:00") Le vendredi à 17h00 et le samedi à 11h00
                         .row
                             .img
                                 img(src="assets/images/post-img2.jpg", alt="image description")
                             .text
                                 h3.h3 LIONEL SABOT ROBERT CANAL
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.
-                                time.time Le vendredi à 17h00 et le samedi à 11h00
+                                time.time(datetime="2012-12-23T08:23:11+07:00") Le vendredi à 17h00 et le samedi à 11h00
                         .row
                             .img
                                 img(src="assets/images/post-img2.jpg", alt="image description")
                             .text
                                 h3.h3 LIONEL SABOT ROBERT CANAL
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia consequatur architecto quisquam facere laborum reiciendis voluptas corrupti tempore officiis, reprehenderit, rerum dolores, dignissimos asperiores dolorem optio ipsum? Tempora, vel.
-                                time.time Le vendredi à 17h00 et le samedi à 11h00
+                                time.time(datetime="2012-12-23T08:23:11+07:00") Le vendredi à 17h00 et le samedi à 11h00
                 include ../partials/sidebar
     include ../partials/foot

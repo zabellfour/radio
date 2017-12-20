@@ -23,9 +23,7 @@
             <div class="container">
               <div class="header-center-top-wrapper">
                 <div class="mob-menu">
-                  <button class="menu-opener">
-                    <div class="burger-holder"><span></span><span></span><span></span></div><span class="text">MENU</span>
-                  </button>
+                  <button class="menu-opener"><span class="burger-holder"><span></span><span></span><span></span></span><span class="text">MENU</span></button>
                 </div><a class="logo" href="#"><img src="assets/images/logo-color.png" alt="RRB"></a>
                 <div class="hero-holder">
                   <div class="name-holder"><span class="descr">à l’antenne</span><strong class="name">jeudi hippique</strong></div><img src="assets/images/header-hero.png" alt="jeudi hippique">
@@ -48,27 +46,27 @@
             <div class="container">
               <div class="owl-carousel owl-theme program-slider">
                 <div class="slide now-playing">
-                  <time class="time" datetime="2017-05-15 7:30">7h30</time>
+                  <time class="time" datetime="2017-05-15T07:30">7h30</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 8:00">8h00</time>
+                  <time class="time" datetime="2017-05-15T08:00">8h00</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 9:00">9h00</time>
+                  <time class="time" datetime="2017-05-15T09:00">9h00</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 10:00">10h00</time>
+                  <time class="time" datetime="2017-05-15T10:00">10h00</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 11:30">11h30</time>
+                  <time class="time" datetime="2017-05-15T11:30">11h30</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
                 <div class="slide">
-                  <time class="time" datetime="2017-05-15 12:30">12h30</time>
+                  <time class="time" datetime="2017-05-15T12:30">12h30</time>
                   <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
                 </div>
               </div>
@@ -85,7 +83,7 @@
                 <li><a href="#"><i class="icon-frequence"></i><strong class="link-text">fréquences</strong></a></li>
               </ul>
               <form class="search-form" action="#">
-                <input type="text" placeholder="Rechercher">
+                <input type="text" placeholder="Rechercher" required>
                 <button type="submit"><i class="icon-search"></i></button>
               </form>
             </div>
@@ -112,10 +110,10 @@
                 <div class="login-form">
                   <form action="#">
                     <div class="row-input">
-                      <input class="form-control" type="text" placeholder="Identifiant" name="name">
+                      <input class="form-control" type="text" placeholder="Identifiant" name="name" required>
                     </div>
                     <div class="row-input">
-                      <input class="form-control form-control-btn" type="password" placeholder="Mot de passe" name="name">
+                      <input class="form-control form-control-btn" type="password" placeholder="Mot de passe" name="name" required>
                       <button class="btn" type="submit">OK</button>
                     </div>
                   </form>
@@ -135,10 +133,10 @@
             <!-- breadcrumb of the page-->
             <div class="breadcrumb-wrap">
               <ul class="breadcrumb">
-                <li>Accueil</li>
-                <li>RRB</li>
-                <li>Équipe</li>
-                <li>Animateurs</li>
+                <li> <a href="#">Accueil</a></li>
+                <li> <a href="#">RRB</a></li>
+                <li> <a href="#">Équipe</a></li>
+                <li> <a href="#">Animateurs</a></li>
               </ul>
             </div>
             <!-- nav pages of the site-->
@@ -162,17 +160,17 @@
                 <div class="row">
                   <div class="box">
                     <label>Nom<span>*</span></label>
-                    <input class="form-control" type="text" placeholder="" name="name">
+                    <input class="form-control" type="text" placeholder="" name="name" required>
                   </div>
                   <div class="box">
                     <label>e-mail<span>*</span></label>
-                    <input class="form-control" type="text" placeholder="" name="name">
+                    <input class="form-control" type="text" placeholder="" name="name" required>
                   </div>
                 </div>
                 <div class="row">
                   <div class="box">
                     <label>objet<span>*</span></label>
-                    <select class="selectpicker">
+                    <select class="selectpicker" required>
                       <option>Service Pub</option>
                       <option>Service Pub1</option>
                       <option>Service Pub3</option>
@@ -183,7 +181,7 @@
                 <div class="row">
                   <div class="box">
                     <label>message <span>*</span></label>
-                    <textarea></textarea>
+                    <textarea required></textarea>
                   </div>
                 </div>
                 <div class="row">
@@ -332,7 +330,7 @@
                     </label>
                   </div>
                   <div class="input-row">
-                    <input type="email" placeholder="Adresse mail" required="true  ">
+                    <input type="email" placeholder="Adresse mail" required>
                   </div>
                   <div class="input-row">
                     <button type="submit">Incrioption</button>

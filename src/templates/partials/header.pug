@@ -6,7 +6,7 @@ header#header
 					.header-center-top-wrapper
 						.mob-menu
 							button.menu-opener
-								.burger-holder
+								span.burger-holder
 									span
 									span
 									span
@@ -38,32 +38,32 @@ header#header
 				.container
 					.owl-carousel.owl-theme.program-slider
 						.slide.now-playing
-							time.time(datetime="2017-05-15 7:30") 7h30
+							time.time(datetime="2017-05-15T07:30") 7h30
 							.text
 								strong.title L 'INVITé DU MATIN
 								span.text-descr par Camille Blondel
 						.slide
-							time.time(datetime="2017-05-15 8:00") 8h00
+							time.time(datetime="2017-05-15T08:00") 8h00
 							.text
 								strong.title L 'INVITé DU MATIN
 								span.text-descr par Camille Blondel
 						.slide
-							time.time(datetime="2017-05-15 9:00") 9h00
+							time.time(datetime="2017-05-15T09:00") 9h00
 							.text
 								strong.title L 'INVITé DU MATIN
 								span.text-descr par Camille Blondel
 						.slide
-							time.time(datetime="2017-05-15 10:00") 10h00
+							time.time(datetime="2017-05-15T10:00") 10h00
 							.text
 								strong.title L 'INVITé DU MATIN
 								span.text-descr par Camille Blondel
 						.slide
-							time.time(datetime="2017-05-15 11:30") 11h30
+							time.time(datetime="2017-05-15T11:30") 11h30
 							.text
 								strong.title L 'INVITé DU MATIN
 								span.text-descr par Camille Blondel
 						.slide
-							time.time(datetime="2017-05-15 12:30") 12h30
+							time.time(datetime="2017-05-15T12:30") 12h30
 							.text
 								strong.title L 'INVITé DU MATIN
 								span.text-descr par Camille Blondel
@@ -90,7 +90,7 @@ header#header
 								i.icon-frequence
 								strong.link-text fréquences
 					form.search-form(action="#")
-						input(type="text" placeholder="Rechercher")
+						input(type="text" placeholder="Rechercher" required)
 						button(type="submit")
 							i.icon-search
 				.panel-top
@@ -127,7 +127,7 @@ header#header
 						.login-form
 							form(action='#')
 								.row-input
-									input.form-control(type='text', placeholder='Identifiant' name='name')
+									input.form-control(type='text', placeholder='Identifiant' name='name' required)
 								.row-input
-									input.form-control.form-control-btn(type='password', placeholder='Mot de passe' name='name')
+									input.form-control.form-control-btn(type='password', placeholder='Mot de passe' name='name' required)
 									button.btn(type='submit') OK

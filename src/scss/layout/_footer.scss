@@ -68,6 +68,11 @@
             .logo {
                 display: inline-block;
                 margin-bottom: 2px;
+                opacity: 1;
+                @include animate(opacity);
+                &:hover{
+                    opacity: .8;
+                }
             }
             .h5 {
                 font-size: 20px;
@@ -276,6 +281,11 @@
             color: $white;
             border-radius: 5px;
             letter-spacing: 1px;
+            opacity: 1;
+            @include animate(opacity);
+            &:hover{
+                opacity: .8;
+            }
         }
         margin-bottom: 10px;
     }
