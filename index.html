@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Radio Rythme Blev</title>
+    <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+    <link media="all" rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="menu-holder">
+        <div class="header-center">
+          <div class="header-center-top">
+            <div class="container">
+              <div class="header-center-top-wrapper">
+                <div class="mob-menu">
+                  <button class="menu-opener"><span class="burger-holder"><span></span><span></span><span></span></span><span class="text">MENU</span></button>
+                </div><a class="logo" href="#"><img src="assets/images/logo-color.png" alt="RRB"></a>
+                <div class="hero-holder">
+                  <div class="name-holder"><span class="descr">à l’antenne</span><strong class="name">jeudi hippique</strong></div><img src="assets/images/header-hero.png" alt="jeudi hippique">
+                </div>
+                <div class="apps-box">
+                  <div class="player">
+                    <div class="play-info"><span class="top-title">Player</span><span class="main-title">écoutez le direct</span>
+                      <div class="progress"><span class="remaining" style="width:70%;"></span></div>
+                      <div class="bottom-info"><span class="track-info">Space oddity</span><span class="author">DAVID BOWIE</span></div>
+                    </div>
+                    <button class="play-button"><i class="icon-play"></i></button>
+                  </div>
+                  <div class="weather-holder"><img src="assets/images/weather-widget.png" alt="weather widget"></div>
+                  <div class="clock-holder"><img src="assets/images/clock.png" alt="clock"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-center-bottom">
+            <div class="container">
+              <div class="owl-carousel owl-theme program-slider">
+                <div class="slide now-playing">
+                  <time class="time" datetime="2017-05-15T07:30">7h30</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide">
+                  <time class="time" datetime="2017-05-15T08:00">8h00</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide">
+                  <time class="time" datetime="2017-05-15T09:00">9h00</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide">
+                  <time class="time" datetime="2017-05-15T10:00">10h00</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide">
+                  <time class="time" datetime="2017-05-15T11:30">11h30</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+                <div class="slide">
+                  <time class="time" datetime="2017-05-15T12:30">12h30</time>
+                  <div class="text"><strong class="title">L 'INVITé DU MATIN</strong><span class="text-descr">par Camille Blondel</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="mob-wrapper">
+            <div class="header-top"><a class="logo-full" href="#"><img src="assets/images/logo-full.png" alt="Radio Rythme Blev"></a>
+              <ul class="nav-list">
+                <li><a href="#"><i class="icon-radio"></i><strong class="link-text">écouter</strong></a></li>
+                <li><a href="#"><i class="icon-tv"></i><strong class="link-text">regarder</strong></a></li>
+                <li><a href="#"><i class="icon-podcast"></i><strong class="link-text">podcasts</strong></a></li>
+                <li><a href="#"><i class="icon-frequence"></i><strong class="link-text">fréquences</strong></a></li>
+              </ul>
+              <form class="search-form" action="#">
+                <input type="text" placeholder="Rechercher" required>
+                <button type="submit"><i class="icon-search"></i></button>
+              </form>
+            </div>
+            <div class="panel-top">
+              <div class="nav-top-holder">
+                <ul class="nav">
+                  <li><a href="#">Actualités</a></li>
+                  <li><a href="#">Programmes</a></li>
+                  <li><a href="#">Vidéos</a></li>
+                  <li class="has-dropdown active"><span class="drop-opener">RRB</span>
+                    <ul class="drop-down">
+                      <li><a href="#">Histoire</a></li>
+                      <li><a href="#">Équipe</a></li>
+                      <li><a href="#">Régie pub</a></li>
+                      <li><a href="#">Fréquence</a></li>
+                      <li><a href="#">Archives</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Jeux<span class="info-box"><span class="info1">25 00 00*</span><span class="info2">standard jeux</span></span></a></li>
+                </ul>
+              </div>
+              <div class="login-holder">
+                <div class="logo"><span class="text1">Club RRB</span><a class="text2" href="#" target="_blank">Je m‘inscris</a></div>
+                <div class="login-form">
+                  <form action="#">
+                    <div class="row-input">
+                      <input class="form-control" type="text" placeholder="Identifiant" name="name" required>
+                    </div>
+                    <div class="row-input">
+                      <input class="form-control form-control-btn" type="password" placeholder="Mot de passe" name="name" required>
+                      <button class="btn" type="submit">OK</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- contain main informative part of the site-->
+    <main id="main">
+      <div class="container">
+        <div class="content-holder">
+          <div class="content" style="dispaly:flex;justify-content:center; font-size:16px;">
+            <h5>List of pages</h5>
+            <ul>
+              <li><a href="home.html">home</a></li>
+              <li><a href="animateurs.html">animateurs</a></li>
+              <li><a href="archives.html">archives</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="direct.html">direct</a></li>
+              <li><a href="frequences.html">frequences</a></li>
+              <li><a href="grille.html">grille</a></li>
+              <li><a href="histoire.html">histoire</a></li>
+              <li><a href="journalistes.html">journalistes</a></li>
+              <li><a href="podcast.html">podcast</a></li>
+              <li><a href="programmes.html">programmes</a></li>
+            </ul>
+          </div>
+          <!-- sidebar of the page-->
+          <div class="sidebar">
+            <!-- Ad panes of the page-->
+            <div class="img-ad"><img src="assets/images/image-sidebar01.jpg" alt="image description"></div>
+            <!-- Facebook widget of the page--><a class="facebook-link" href="#"><span>Rejoignez-nous sur<strong>Facebook</strong></span>
+              <div class="img"><img src="assets/images/facebook-icon.png" alt="image description"></div></a>
+            <!-- Facebook widget of the page-->
+            <div class="sidebar-list">
+              <h4 class="h4">boîte à outils</h4>
+              <div class="block">
+                <div class="row"><span>Donnez votre avis</span>
+                  <div class="img"><img src="assets/images/sidebar-icon01.png" alt="image description"></div>
+                </div>
+                <div class="row"><span>posez vos questions</span>
+                  <div class="img"><img src="assets/images/sidebar-icon02.png" alt="image description"></div>
+                </div>
+                <div class="row"><span>réagissez en direct</span>
+                  <div class="img"><img src="assets/images/sidebar-icon03.png" alt="image description"></div>
+                </div>
+                <div class="row"><span>Vous avez une idée</span>
+                  <div class="img"><img src="assets/images/sidebar-icon04.png" alt="image description"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab panes of the page-->
+            <div class="tab-sidebar">
+              <h4 class="h4">vos émissions</h4>
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#tab1" data-toggle="tab">les + écoutées</a></li>
+                <li><a href="#tab2" data-toggle="tab">les + vues</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">1</span><span class="info">240</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">28 juillet 2017</span><a class="link" href="#">Duis commodo elit sed nisi molestie</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">2</span><span class="info">270</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">28 juillet 2017</span><a class="link" href="#">Duis commodo elit sed nisi molestie</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">3</span><span class="info">220</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">28 juillet 2017</span><a class="link" href="#">Duis commodo elit sed nisi molestie</a></div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">1</span><span class="info">240</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">20 juillet 2017</span><a class="link" href="#">Duis elit sed nisi molestie commodo</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">2</span><span class="info">20</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">10 juillet 2017</span><a class="link" href="#">Duis nisicom modo elit sed  molestie</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="img-box"><img src="assets/images/image-sidebar03.jpg" alt="image description">
+                      <div class="panel"><span class="number">3</span><span class="info">150</span></div>
+                    </div>
+                    <div class="text-box"><span class="data">18 juillet 2017</span><a class="link" href="#">Duis comed nisi molestie modo elit s</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Banner list of the page-->
+            <div class="baners-sidebar">
+              <div class="row"><span class="text"> <span class="text1">Bientôt...</span>CARTE CHANCE</span>
+                <ul class="icon-list">
+                  <li><img src="assets/images/sidebar-icon05.png" alt="image description"></li>
+                  <li><img src="assets/images/sidebar-icon06.png" alt="image description"></li>
+                  <li><img src="assets/images/sidebar-icon07.png" alt="image description"></li>
+                </ul>
+              </div>
+              <div class="row"><span class="text"><span class="text2">envoyez </span>CHANCE Votre prénom  au 3146*</span></div>
+            </div>
+            <!-- Ad panes of the page-->
+            <div class="img-ad"><img src="assets/images/image-sidebar02.jpg" alt="image description"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer">
+      <div class="container">
+        <div class="col-wrapper">
+          <div class="col twitter-col"><strong class="title">Twitter Widget</strong>
+            <div class="twitter-holder">
+              <div class="post-holder">
+                <div class="message-row">
+                  <p>@PASCO, Duis commodo elit sed nisi molestie</p>
+                </div>
+                <div class="action-row"> <span class="text">2 hours ago</span><a href="#" target="_blank">Reply</a><a href="#" target="_blank">Retweet</a><a href="#" target="_blank">Favorite</a></div>
+              </div>
+              <div class="post-holder">
+                <div class="message-row">
+                  <p>@PASCO, Duis commodo elit sed nisi molestie</p>
+                </div>
+                <div class="action-row"> <span class="text">2 hours ago</span><a href="#" target="_blank">Reply</a><a href="#" target="_blank">Retweet</a><a href="#" target="_blank">Favorite</a></div>
+              </div>
+              <div class="post-holder">
+                <div class="message-row">
+                  <p>@PASCO, Duis commodo elit sed nisi molestie</p>
+                </div>
+                <div class="action-row"> <span class="text">2 hours ago</span><a href="#" target="_blank">Reply</a><a href="#" target="_blank">Retweet</a><a href="#" target="_blank">Favorite</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col news-col"><strong class="title">news letter</strong>
+            <div class="row">
+              <div class="news-form">
+                <form action="#">
+                  <div class="input-chk-row">
+                    <label class="chk-custom" for="tmp1">
+                      <input type="checkbox" checked id="tmp1"><span class="fake-chk"></span><span class="text">Theme 1</span>
+                    </label>
+                    <label class="chk-custom" for="tmp2">
+                      <input type="checkbox" checked id="tmp2"><span class="fake-chk"></span><span class="text">Theme 2</span>
+                    </label>
+                  </div>
+                  <div class="input-chk-row">
+                    <label class="chk-custom" for="tmp3">
+                      <input type="checkbox" id="tmp3"><span class="fake-chk"></span><span class="text">Theme 3</span>
+                    </label>
+                    <label class="chk-custom" for="tmp4">
+                      <input type="checkbox" id="tmp4"><span class="fake-chk"></span><span class="text">Theme 4</span>
+                    </label>
+                  </div>
+                  <div class="input-row">
+                    <input type="email" placeholder="Adresse mail" required>
+                  </div>
+                  <div class="input-row">
+                    <button type="submit">Incrioption</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="social-holder"><strong class="title">social widget</strong>
+                <ul class="social-net-share">
+                  <li class="social-facebook"><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                  <li class="social-twitter"><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+                  <li class="social-google"><a href="#" target="_blank"><i class="icon-google"></i></a></li>
+                  <li class="social-youtube"><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col info-col">
+            <div class="text-col"><a class="logo" href="#"><img src="assets/images/logo-lg.svg" alt="RRB" width="175" height="95"></a>
+              <h5 class="h5">Radio Rythme Bleu</h5>
+              <address>8 avenue Maréchal Foch NOUMÉA		</address>
+              <dl class="contact-info">
+                <dt>Standard </dt>
+                <dd> <a href="tel:254646">25 46 46 </a></dd>
+                <dt>Rédaction  </dt>
+                <dd> <a href="tel:254500">25 45 00</a></dd>
+                <dt>Fax </dt>
+                <dd>28 49 28</dd>
+                <dt>E-mail </dt>
+                <dd> <a href="mailto:&amp;#114;&amp;#114;&amp;#098;&amp;#064;&amp;#108;&amp;#097;&amp;#103;&amp;#111;&amp;#111;&amp;#110;&amp;#046;&amp;#110;&amp;#099;">&#114;&#114;&#098;&#064;&#108;&#097;&#103;&#111;&#111;&#110;&#046;&#110;&#099;</a></dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col map-col">
+            <div id="mapid" data-latitude="-22,278773" data-longtitude="166,443193" data-zoom="17"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/vendor.min.js" defer=""></script>
+    <script src="assets/js/app.js" defer=""></script>
+  </body>
+</html>
