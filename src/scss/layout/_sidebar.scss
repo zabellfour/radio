@@ -52,6 +52,11 @@ $sidebar-bg: $gray-light;
 	line-height:52px;
 	text-decoration:none;
 	padding:18px 18px 33px 30px;
+	@include animate(opacity);
+	opacity: 1;
+	&:hover{
+		opacity: .9;
+	}
 	@include media('<widescreen') {
 		margin: 0 -10px 20px;
 		font-size:36px;

@@ -38,6 +38,7 @@ $navbar-active-bg: #f2f2f2;
 		padding:17px 34px 13px;
 		color:$navbar-color;
 		text-decoration:none;
+	
 		@include media('<widescreen') {
 			padding:10px 20px 10px;
 		}
@@ -84,5 +85,10 @@ $navbar-active-bg: #f2f2f2;
 	a {
 		text-decoration:none;
 		color:$white;
+		opacity:1;
+		@include animate(opacity);
+		&:hover{
+			opacity: .8;
+		}
 	}
 }

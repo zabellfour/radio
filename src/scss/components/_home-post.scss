@@ -27,6 +27,13 @@
         text-transform: uppercase;
         color: $blue;
         margin: 0 0 14px;
+        a{
+            text-decoration: none;
+            @include animate(opacity);
+            &:hover{
+                opacity: .8;
+            }
+        }
     }
     .img-box {
         position: relative;
