@@ -5,6 +5,7 @@
 
 import common from './modules/common';
 import accordionActive from './modules/accordionActive';
+import customClock from './modules/clock';
 
 //Sliders
 import sliderPrograms from './modules/sliders/sliderPrograms';
@@ -34,6 +35,8 @@ import customVideo from './modules/video';
         customSelect.init();
         map.init();
         customVideo.init();
+        //custom-clock
+        customClock.init();
 
     });
 

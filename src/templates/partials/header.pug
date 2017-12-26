@@ -32,8 +32,9 @@ header#header
 									i.icon-play
 							.weather-holder
 								img(src="assets/images/weather-widget.png", alt="weather widget")
-							.clock-holder
-								img(src="assets/images/clock.png", alt="clock")
+							.clock-holder#header-clock
+								include ../partials/clock
+								//img(src="assets/images/clock.png", alt="clock")
 			.header-center-bottom
 				.container
 					.owl-carousel.owl-theme.program-slider

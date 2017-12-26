@@ -28,7 +28,7 @@
         color: $blue;
         margin: 0 0 14px;
         a{
-            text-decoration: none;
+        text-decoration: none !important ;
             @include animate(opacity);
             &:hover{
                 opacity: .8;

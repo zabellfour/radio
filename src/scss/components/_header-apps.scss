@@ -233,6 +233,13 @@ margin-bottom: 0;
         }
     }
     .clock-holder {
+        // position: fixed;
+        // top:50%;
+        // lefT:50%;
+        // width: 300px;
+        // height: 300px;
+        // background: #000;
+
         position: absolute;
         left: calc(100% + 44px);
         top: 10px;
