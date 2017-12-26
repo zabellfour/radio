@@ -49,7 +49,7 @@ var customClock = {
             }
             if (minutes <= 9) {
                 min1 = minutes;
-                min12 = 0;
+                min2 = 0;
             } else {
                 min1 = (minutes + '')[1] * 1;
                 min2 = (minutes + '')[0] * 1;
