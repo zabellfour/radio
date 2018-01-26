@@ -116,6 +116,7 @@
         transform: translateY(3px);
         display: flex;
         align-items: center;
+        align-self: stretch;
         justify-content: flex-end;
         width: 202px;
         height: 36px;
@@ -235,6 +236,8 @@
 
 .header-center {
     background: linear-gradient(to right, #46acdb 1%, #022c47 100%);
+    z-index: 2;
+    position: relative;
     @include media('<tablet') {
         height: 65px;
     }

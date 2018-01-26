@@ -31,7 +31,7 @@ $navbar-active-bg: #f2f2f2;
 			border-right:1px solid $navbar-active-bg;
 		}
 	}
-	.is-active a {background:$navbar-active-bg;}
+	.is-active a,.active a {background:$navbar-active-bg;}
 	a {
 		@include animate(background);
 		display:block;
@@ -90,5 +90,11 @@ $navbar-active-bg: #f2f2f2;
 		&:hover{
 			opacity: .8;
 		}
+	}
+}
+.tab-pane{
+	display: none;
+	&.active{
+		display: block;
 	}
 }
