@@ -1,0 +1,71 @@
+.pagination-holder{
+    display: flex;align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    @extend %listreset;
+    li{
+        display: inline-flex;
+        margin: 5px;
+
+        align-items: center;justify-content: center;
+        &.active a{
+            background: $blue;
+            color:$white;
+            pointer-events:none;
+        }
+        &:first-child,&:last-child{
+            height:34px;
+            a{
+
+                border:none;
+                font-size: 30px;
+                line-height:40px;
+                height: auto;
+                color:transparent !important;
+                margin:5px 15px;
+                &:hover:after{
+                    color:$red;
+                }
+                &:after{
+                    font-size: 30px;
+                    line-height:0px;
+                    display: inline-block;
+                    @include animate(background-color color);
+                    content: "\e911";
+                    font-family: icomoon;
+                    color:$blue;
+                }
+            }
+        }
+        &:last-child{
+            a{
+                transform:rotate(180deg);
+            }
+        }
+        a{
+            line-height: 1;
+            font-family: arial;
+     width:30px;
+     height:30px;
+     display: block;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     font-weight:500;
+font-size: 16px;
+        border:2px solid $blue; 
+        border-radius:50%;
+        @include animate(border-color color);
+        &:hover{
+           border-color:$red;
+           color:red;
+        }
+        }
+    }
+}
