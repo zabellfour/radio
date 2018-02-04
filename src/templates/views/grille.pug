@@ -11,8 +11,39 @@ html(lang='fr')
                 .content
                     include ../partials/breadcrumb
                     h3.h3 Notre grille
-                    include ../partials/nav-panel
-                    include ../partials/accordion-block
+                    .nav-panel
+                        ul.navbar-list
+                            li.active
+                                a(href="#en_semaine" data-toggle="tab") en semaine
+                            li
+                                a(href="#samedi" data-toggle="tab") samedi
+                            li
+                                a(href="#dimanche" data-toggle="tab") dimanche
+                            li
+                                a(href="#types" data-toggle="tab") types
+                        ul.navbar-info
+                            li.is-active
+                                a(href="#" target="_blank") L‘information
+                            li
+                                a(href="#" target="_blank") Europe sur RRB
+                            li
+                                a(href="#" target="_blank") La musique
+                            li
+                                a(href="#" target="_blank") Les rubriques
+                            li
+                                a(href="#" target="_blank") Les services
+                    // post of the page
+                    .tab-pane.posts-arhive.no-time#en_semaine.active
+                        include ../partials/accordion-block
+                    .tab-pane.posts-arhive.no-time#samedi
+                        h3 #samedi Tab
+                        include ../partials/accordion-block
+                    .tab-pane.posts-arhive.no-time#dimanche
+                        h3 #dimanche Tab
+                        include ../partials/accordion-block
+                    .tab-pane.posts-arhive.no-time#types
+                        h3 #types Tab
+                        include ../partials/accordion-block
                     include ../partials/information-list
                 include ../partials/sidebar
     include ../partials/foot
