@@ -7,8 +7,6 @@ var customClock = {
         var dotS = customClock.find('#dots path'),
             dotH = customClock.find('#doth path'),
             sep = customClock.find('#separator'),
-            sec_1 = customClock.find('#sec_1 path'),
-            sec_2 = customClock.find('#sec_2 path'),
             min_1 = customClock.find('#min_1 path'),
             min_2 = customClock.find('#min_2 path'),
             hr_1 = customClock.find('#hr_1 path'),
@@ -69,8 +67,6 @@ var customClock = {
                     sep.css("fill-opacity", "0");
                 }
             }
-            drow(sec_1, sec1);
-            drow(sec_2, sec2);
             drow(min_1, min1);
             drow(min_2, min2);
             drow(hr_1, hr1);
