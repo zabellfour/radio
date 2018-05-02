@@ -414,7 +414,9 @@
             <div class="top-post-home">
               <h4 class="h4">Lorem ipsum sin dolores sint occaecat mollit</h4>
               <p>The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
-              <h5 class="h5"> <a href="#">découvrez toute l‘actu</a></h5>
+              <h5 class="h5"> 
+                <button class="btn-primary">découvrez toute l‘actu</button>
+              </h5>
               <div class="img-box"><img src="assets/images/image-main02.jpg" alt="image description">
                 <div class="block-info"><span class="info-comment">7</span><span class="info-like">15</span></div>
               </div>
@@ -526,7 +528,19 @@
             <!-- facebook of the page-->
             <div class="facebook-baner">
               <h4 class="h4">retrouvez-nous sur facebook</h4>
-              <div class="img"><img src="assets/images/image-main12.jpg" alt="image description"></div>
+              <div id="fb-root"></div>
+              <script>
+                (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.0';
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+              </script>
+              <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-width="500" data-hide-cover="false" data-show-facepile="true">
+                <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+              </div>
             </div>
           </div>
           <!-- sidebar of the page-->
@@ -702,7 +716,7 @@
             </div>
           </div>
           <div class="col map-col">
-            <div id="mapid" data-latitude="-22,278773" data-longtitude="166,443193" data-zoom="17"></div>
+            <div id="mapid" data-latitude="-22,274449" data-longtitude="166,443752" data-zoom="17"></div>
           </div>
         </div>
       </div>
